@@ -1,14 +1,24 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bg">
-
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
 
         <TableRow
             android:layout_width="fill_parent"
@@ -17,7 +27,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton"
+                android:id="@+id/Aatrox"
                 android:src="@drawable/aatroxthumb"
                 android:background="@drawable/aatroxthumb" />
 
@@ -39,7 +49,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton2"
+                android:id="@+id/Ahri"
                 android:background="@drawable/ahrithumb" />
         </TableRow>
 
@@ -50,7 +60,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton3"
+                android:id="@+id/Akali"
                 android:background="@drawable/akalithumb" />
         </TableRow>
 
@@ -61,7 +71,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton4"
+                android:id="@+id/Alistar"
                 android:background="@drawable/alistarthumb" />
         </TableRow>
 
@@ -72,7 +82,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton5"
+                android:id="@+id/Amumu"
                 android:background="@drawable/amumuthumb" />
         </TableRow>
 
@@ -83,7 +93,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton6"
+                android:id="@+id/Anivia"
                 android:background="@drawable/aniviathumb" />
         </TableRow>
 
@@ -94,7 +104,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
+                android:id="@+id/Annie"
                 android:background="@drawable/anniethumb" />
         </TableRow>
 
@@ -105,7 +115,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
+                android:id="@+id/Ashe"
                 android:background="@drawable/ashethumb" />
         </TableRow>
 
@@ -116,8 +126,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton5"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Azir"
+                android:background="@drawable/azirthumb" />
         </TableRow>
 
         <TableRow
@@ -127,8 +137,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton6"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Bard"
+                android:background="@drawable/blitzthumb" />
         </TableRow>
 
         <TableRow
@@ -138,8 +148,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton6"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Blitzcrank"
+                android:background="@drawable/blitzthumb" />
         </TableRow>
 
         <TableRow
@@ -149,8 +159,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton6"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Brand"
+                android:background="@drawable/brandthumb" />
         </TableRow>
 
         <TableRow
@@ -160,8 +170,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton6"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Braum"
+                android:background="@drawable/braumthumb" />
         </TableRow>
 
         <TableRow
@@ -171,8 +181,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Caitlyn"
+                android:background="@drawable/caitsquare" />
         </TableRow>
 
         <TableRow
@@ -182,8 +192,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/cassiopeia"
+                android:background="@drawable/cassthumb" />
         </TableRow>
 
         <TableRow
@@ -193,8 +203,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/ChoGath"
+                android:background="@drawable/chothumb" />
         </TableRow>
 
         <TableRow
@@ -204,8 +214,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Corki"
+                android:background="@drawable/corkithumb" />
         </TableRow>
 
         <TableRow
@@ -215,8 +225,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Darius"
+                android:background="@drawable/dariusthumb" />
         </TableRow>
 
         <TableRow
@@ -226,8 +236,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Diana"
+                android:background="@drawable/dianathumb" />
         </TableRow>
 
         <TableRow
@@ -237,8 +247,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Draven"
+                android:background="@drawable/draventhumb" />
         </TableRow>
 
         <TableRow
@@ -248,8 +258,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Elise"
+                android:background="@drawable/elisethumb" />
         </TableRow>
 
         <TableRow
@@ -259,8 +269,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Evelynn"
+                android:background="@drawable/evethumb" />
         </TableRow>
 
         <TableRow
@@ -270,8 +280,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Ezreal"
+                android:background="@drawable/ezthumb" />
         </TableRow>
 
         <TableRow
@@ -281,8 +291,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Fiddlesticks"
+                android:background="@drawable/fiddlethumb" />
         </TableRow>
 
         <TableRow
@@ -292,8 +302,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Fiora"
+                android:background="@drawable/fiorathumb" />
         </TableRow>
 
         <TableRow
@@ -303,15 +313,14 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton7"
-                android:src="@drawable/aatroxthumb"
-                android:background="@drawable/aatroxthumb" />
+                android:id="@+id/Fizz"
+                android:background="@drawable/fizzthumb" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/Champion1"
+                android:text="@string/Champion27"
                 android:id="@+id/textView"
                 android:layout_gravity="center" />
         </TableRow>
@@ -323,8 +332,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Galio"
+                android:background="@drawable/galiothumb" />
         </TableRow>
 
         <TableRow
@@ -334,8 +343,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Garen"
+                android:background="@drawable/garenthumb" />
         </TableRow>
 
         <TableRow
@@ -345,8 +354,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Gnar"
+                android:background="@drawable/gnarthumb" />
         </TableRow>
 
         <TableRow
@@ -356,8 +365,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Gangplank"
+                android:background="@drawable/gpthumb" />
         </TableRow>
 
         <TableRow
@@ -367,8 +376,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Gragas"
+                android:background="@drawable/gragasthumb" />
         </TableRow>
 
         <TableRow
@@ -378,8 +387,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Graves"
+                android:background="@drawable/gravesthumb" />
         </TableRow>
 
         <TableRow
@@ -389,8 +398,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Hecarim"
+                android:background="@drawable/hecarimthumb" />
         </TableRow>
 
         <TableRow
@@ -400,8 +409,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Heimerdinger"
+                android:background="@drawable/heimerthumb" />
         </TableRow>
 
         <TableRow
@@ -411,8 +420,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Irelia"
+                android:background="@drawable/ireliathumb" />
         </TableRow>
 
         <TableRow
@@ -422,8 +431,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/J4"
+                android:background="@drawable/j4thumb" />
         </TableRow>
 
         <TableRow
@@ -433,8 +442,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Janna"
+                android:background="@drawable/jannathumb" />
         </TableRow>
 
         <TableRow
@@ -444,8 +453,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Jax"
+                android:background="@drawable/jaxthumb" />
         </TableRow>
 
         <TableRow
@@ -455,15 +464,15 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton8"
-                android:src="@drawable/aatroxthumb"
-                android:background="@drawable/aatroxthumb" />
+                android:id="@+id/Jayce"
+                android:background="@drawable/jaycethumb"
+                android:src="@drawable/jaycethumb" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/Champion1"
+                android:text="@string/Champion40"
                 android:id="@+id/textView2"
                 android:layout_gravity="center" />
         </TableRow>
@@ -773,5 +782,7 @@
         </TableRow>
 
     </TableLayout>
+    </LinearLayout>
+    </ScrollView>
 
-</LinearLayout>
+</RelativeLayout>
