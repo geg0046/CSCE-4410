@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion1"
-                android:id="@+id/productID"
+                android:id="@+id/AatroxDesc"
                 android:layout_gravity="center" />
 
 
@@ -484,8 +484,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Jinx"
+                android:background="@drawable/jinxthumb" />
         </TableRow>
 
         <TableRow
@@ -495,8 +495,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Karma"
+                android:background="@drawable/karmathumb" />
         </TableRow>
 
         <TableRow
@@ -506,8 +506,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Karthus"
+                android:background="@drawable/karthusthumb" />
         </TableRow>
 
         <TableRow
@@ -517,8 +517,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Kassadin"
+                android:background="@drawable/kassthumb" />
         </TableRow>
 
         <TableRow
@@ -528,8 +528,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Katarina"
+                android:background="@drawable/katthumb" />
         </TableRow>
 
         <TableRow
@@ -539,8 +539,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Kayle"
+                android:background="@drawable/kaylethumb" />
         </TableRow>
 
         <TableRow
@@ -550,8 +550,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Kennen"
+                android:background="@drawable/kennenthumb" />
         </TableRow>
 
         <TableRow
@@ -561,8 +561,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Khazix"
+                android:background="@drawable/khathumb" />
         </TableRow>
 
         <TableRow
@@ -572,8 +572,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Kogmaw"
+                android:background="@drawable/kogthumb" />
         </TableRow>
 
         <TableRow
@@ -583,8 +583,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/LeBlanc"
+                android:background="@drawable/lbthumb" />
         </TableRow>
 
         <TableRow
@@ -594,8 +594,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/LeeSin"
+                android:background="@drawable/leethumb" />
         </TableRow>
 
         <TableRow
@@ -605,8 +605,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Leona"
+                android:background="@drawable/leonathumb" />
         </TableRow>
 
         <TableRow
@@ -616,15 +616,15 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton9"
-                android:src="@drawable/aatroxthumb"
-                android:background="@drawable/aatroxthumb" />
+                android:id="@+id/Lissandra"
+                android:src="@drawable/lissthumb"
+                android:background="@drawable/lissthumb" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/Champion1"
+                android:text="@string/Champion54"
                 android:id="@+id/textView3"
                 android:layout_gravity="center" />
         </TableRow>
@@ -636,8 +636,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Lucian"
+                android:background="@drawable/lucianthumb" />
         </TableRow>
 
         <TableRow
@@ -647,8 +647,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Lulu"
+                android:background="@drawable/luluthumb" />
         </TableRow>
 
         <TableRow
@@ -658,8 +658,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Lux"
+                android:background="@drawable/luxthumb" />
         </TableRow>
 
         <TableRow
@@ -669,8 +669,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Malphite"
+                android:background="@drawable/malphthumb" />
         </TableRow>
 
         <TableRow
@@ -680,8 +680,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Malzahar"
+                android:background="@drawable/malzthumb" />
         </TableRow>
 
         <TableRow
@@ -691,8 +691,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Maokai"
+                android:background="@drawable/maothumb" />
         </TableRow>
 
         <TableRow
@@ -702,8 +702,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/MasterYi"
+                android:background="@drawable/yithumb" />
         </TableRow>
 
         <TableRow
@@ -713,8 +713,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/MissFortune"
+                android:background="@drawable/mfthumb" />
         </TableRow>
 
         <TableRow
@@ -724,8 +724,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Mordekaiser"
+                android:background="@drawable/mordethumb" />
         </TableRow>
 
         <TableRow
@@ -735,8 +735,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Morgana"
+                android:background="@drawable/morgthumb" />
         </TableRow>
 
         <TableRow
@@ -746,8 +746,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/akalithumb" />
+                android:id="@+id/Mundo"
+                android:background="@drawable/mundothumb" />
         </TableRow>
 
         <TableRow
@@ -757,8 +757,8 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:background="@drawable/ahrithumb" />
+                android:id="@+id/Nami"
+                android:background="@drawable/nami" />
         </TableRow>
 
         <TableRow
@@ -768,17 +768,692 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton10"
-                android:src="@drawable/aatroxthumb"
-                android:background="@drawable/aatroxthumb" />
+                android:id="@+id/Nasus"
+                android:background="@drawable/nasusthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Nautilus"
+                android:src="@drawable/nautthumb"
+                android:background="@drawable/nautthumb" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Champion67"
+                android:id="@+id/textView4"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Nidalee"
+                android:src="@drawable/nidthumb"
+                android:background="@drawable/nidthumb" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Champion68"
+                android:id="@+id/NidDesc"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Nocturne"
+                android:background="@drawable/nocthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Nunu"
+                android:background="@drawable/nunuthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Olaf"
+                android:background="@drawable/olafthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Orianna"
+                android:background="@drawable/orithumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Pantheon"
+                android:background="@drawable/pantheonthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Poppy"
+                android:background="@drawable/poppythumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Quinn"
+                android:background="@drawable/quinnthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rammusthumb"
+                android:id="@+id/Rammus" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/RekSai"
+                android:background="@drawable/rekthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Renekton"
+                android:background="@drawable/renekthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Rengo"
+                android:background="@drawable/rengarthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Riven"
+                android:background="@drawable/riventhumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Rumble"
+                android:src="@drawable/rumblethumble"
+                android:background="@drawable/rumblethumble" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Champion81"
+                android:id="@+id/RumbleDesc"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Ryze"
+                android:background="@drawable/ryzethumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Sejuani"
+                android:background="@drawable/sejthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Shaco"
+                android:background="@drawable/shacothumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Shen"
+                android:background="@drawable/shenthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Shyvana"
+                android:background="@drawable/shyvthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Singed"
+                android:background="@drawable/singedthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Sion"
+                android:background="@drawable/sionthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Sivir"
+                android:background="@drawable/sivirthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Skarner"
+                android:background="@drawable/skarnerthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Sona"
+                android:background="@drawable/sonathumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Soraka"
+                android:background="@drawable/sorakathumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Swain"
+                android:background="@drawable/swainthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Syndra"
+                android:background="@drawable/syndrathumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Talon"
+                android:background="@drawable/talonthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Taric"
+                android:background="@drawable/taricthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Teemo"
+                android:background="@drawable/teemothumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Thresh"
+                android:background="@drawable/threshthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Tristana"
+                android:background="@drawable/tristthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Trundle"
+                android:background="@drawable/trundthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Tryndamere"
+                android:background="@drawable/tryndthumb" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TwistedFate"
+                android:background="@drawable/tfthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Twitch"
+                android:background="@drawable/twitchtvthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Udyr"
+                android:background="@drawable/udyrthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Urgot"
+                android:background="@drawable/urgotthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Varus"
+                android:background="@drawable/varusthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Vayne"
+                android:background="@drawable/vaynethumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Veigar"
+                android:background="@drawable/veigarthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/VelKoz"
+                android:src="@drawable/velthumb"
+                android:background="@drawable/velthumb" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Champion109"
+                android:id="@+id/VelkozDesc"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Vi"
+                android:background="@drawable/vithumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Viktor"
+                android:background="@drawable/viktorthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Vladimir"
+                android:src="@drawable/vladthumb"
+                android:background="@drawable/vladthumb" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion1"
-                android:id="@+id/textView4"
+                android:id="@+id/textView6"
                 android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Volibear"
+                android:background="@drawable/volithumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Wukong"
+                android:background="@drawable/wuthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Warwick"
+                android:background="@drawable/wwthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Xerath"
+                android:background="@drawable/xeraththumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/XinZhao"
+                android:background="@drawable/xinthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Yasuo"
+                android:background="@drawable/yasuothumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Yorick"
+                android:background="@drawable/yorickthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Zac"
+                android:background="@drawable/zacthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Zed"
+                android:background="@drawable/zedthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Ziggs"
+                android:background="@drawable/ziggsthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Zilean"
+                android:background="@drawable/zileanthumb" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Zyra"
+                android:background="@drawable/zyrathumb" />
         </TableRow>
 
     </TableLayout>
