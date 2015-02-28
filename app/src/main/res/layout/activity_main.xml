@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bg">
+
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="match_parent">
@@ -11,14 +12,14 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <TableLayout
+    <!--TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="0dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="0dp">
+        android:layout_marginTop="0dp"-->
 
         <TableRow
             android:layout_width="fill_parent"
@@ -1456,7 +1457,7 @@
                 android:background="@drawable/zyrathumb" />
         </TableRow>
 
-    </TableLayout>
+    <!--/TableLayout-->
     </LinearLayout>
     </ScrollView>
 

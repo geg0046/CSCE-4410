@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">TestApp</string>
-    <string name="edit_message">Enter a message</string>
+    <string name="app_name">LoL Compendium</string>
+    <string name="edit_message">Enter Summoner Name</string>
     <string name="button_send">Send</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_display_message">My Message</string>
+    <string name="Lookup">In-Game Lookup</string>
     <string name="Str1">Large Text</string>
     <string name="Champion1">Aatrox - Fighter/Tank</string>
     <string name="Champion2">Ahri - Mage/Assassin</string>
@@ -132,4 +133,7 @@
     <string name="Champion122">Ziggs - Mage</string>
     <string name="Champion123">Zilean - Support/Mage</string>
     <string name="Champion124">Zyra - Mage/Support</string>
+    <string name="title_activity_in_game_lookup">InGameLookup</string>
+    <string name="hello_world">Hello world!</string>
+
 </resources>
