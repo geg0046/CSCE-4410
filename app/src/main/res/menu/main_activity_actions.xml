@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <!-- Creates the overflow menu within the launch page -->
+    <item android:id="@+id/IGL"
+        android:orderInCategory="1"
+        android:title="@string/Lookup"
+        app:showAsAction="never"/>
+
+
+
+</menu>
