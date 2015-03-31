@@ -6,15 +6,26 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity /*implements View.OnClickListener*/{
     public final static String EXTRA_MESSAGE = "comgeg0046.github.testapp.MESSAGE";
+
+    //@Override
+  /*  public void onClick(View x){
+        switch (x.getId()){
+           // case R.id.Aatrox: Aatrox();
+            break;
+        }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+  //      Button bttn = (Button) findViewById(R.id.button_id);
+    //    bttn.setOnClickListener(this);
     }
 
 
@@ -44,5 +55,13 @@ public class MainActivity extends ActionBarActivity {
     public void lookUp() {
         Intent LookUp = new Intent(this, InGameLookup.class);
         startActivity(LookUp);
+    }
+    /*public void Aatrox(){
+        Intent Aatrox = new Intent(this, Aatrox.class);
+        startActivity(Aatrox);
+    }*/
+    public void Aatrox(View view){
+        Intent Aatrox = new Intent(this, Aatrox.class);
+        startActivity(Aatrox);
     }
 }

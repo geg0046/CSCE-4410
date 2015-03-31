@@ -34,6 +34,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="comgeg0046.github.testapp.MainActivity" />
         </activity>
+        <activity
+            android:name=".Aatrox"
+            android:label="@string/title_activity_aatrox"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
