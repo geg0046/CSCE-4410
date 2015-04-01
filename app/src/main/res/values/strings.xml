@@ -18,7 +18,7 @@
     <string name="Champion7">Annie - Mage</string>
     <string name="Champion8">Ashe - Marksman/Support</string>
     <string name="Champion9">Azir - Mage/Marksman</string>
-    <string name="Champion10">Bard - Support</string>
+    <string name="Champion10">Bard - Support/Mage</string>
     <string name="Champion11">Blitzcrank - Tank/Fighter</string>
     <string name="Champion12">Brand - Mage</string>
     <string name="Champion13">Braum - Support/Tank</string>
@@ -36,7 +36,7 @@
     <string name="Champion25">Fiddlesticks - Mage/Support</string>
     <string name="Champion26">Fiora - Fighter/Assassin</string>
     <string name="Champion27">Fizz - Assassin/Fighter</string>
-    <string name="champion28">Galio - Tank/Mage</string>
+    <string name="Champion28">Galio - Tank/Mage</string>
     <string name="Champion29">Gangplank - Fighter/Support</string>
     <string name="Champion30">Garen - Fighter/Tank</string>
     <string name="Champion31">Gnar - Fighter/Marksman</string>
@@ -134,4 +134,5 @@
     <string name="Champion123">Zilean - Support/Mage</string>
     <string name="Champion124">Zyra - Mage/Support</string>
 
+    <string name="title_activity_aatrox">Aatrox</string>
 </resources>
