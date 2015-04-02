@@ -9,10 +9,13 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <output url="file://$MODULE_DIR$/build/classes/main" />
     <output-test url="file://$MODULE_DIR$/build/classes/test" />
 >>>>>>> 019becbc86efd048ed37a8de83ce75691729654f
+=======
+>>>>>>> 093d77f5b038c572decf09786fd1bdadf71b97b1
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
