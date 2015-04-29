@@ -1,8 +1,7 @@
 package comgeg0046.github.testapp;
 
-import android.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -14,8 +13,13 @@ public class Aatrox extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aatrox);
         if(savedInstanceState == null){
+            Bundle bundle = new Bundle();
+            bundle.putString("name", "Aatrox");
+            ChampionFragment fragInfo = new ChampionFragment();
+            fragInfo.setArguments(bundle);
+
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new AatroxFragment())
+                    .add(R.id.container, fragInfo)
                     .commit();
         }
     }

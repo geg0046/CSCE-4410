@@ -5,5 +5,3 @@
     android:layout_height="match_parent"
     tools:context="comgeg0046.github.testapp.Aatrox"
     tools:ignore="MergeRootFrame" />
-
-

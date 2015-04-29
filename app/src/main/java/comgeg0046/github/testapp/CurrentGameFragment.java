@@ -44,7 +44,7 @@ public class CurrentGameFragment extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.aatroxfragment, menu);
+        inflater.inflate(R.menu.championfragment, menu);
     }
 
     @Override
@@ -84,7 +84,7 @@ public class CurrentGameFragment extends Fragment {
             //@Override
             //public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
             //    String summoner = mSummonersAdapter.getItem(position);
-            //    Intent intent = new Intent(getActivity(), DetailActivity.class)
+            //    Intent intent = new Intent(getActivity(), SummonerDetailsActivity.class)
             //            .putExtra(Intent.EXTRA_TEXT, summoner);
             //    startActivity(intent);
             //}
@@ -125,25 +125,16 @@ public class CurrentGameFragment extends Fragment {
 
             //strings to find summoner id
             final String SUM = summonerStr[0].toLowerCase();
-            //final String SUMNAME = "name";
             final String SUMID = "id";
 
             JSONObject SummonerData = new JSONObject(SummonerJsonStr);
             JSONObject SummonerInfo = SummonerData.getJSONObject(SUM);
 
-            //String sumName = SummonerInfo.getString(SUMNAME);
             String sumId = SummonerInfo.getString(SUMID);
-
-            //String result = null;
-            //result = "Name for lookup: " + sumName + ", id: " + sumId;
-            //result = sumId;
 
             summonerId = sumId;
 
             Log.v(LOG_TAG, "Summoner Entry: " + summonerId);
-            //Log.v(LOG_TAG, "Summoner Entry: " + result);
-
-            //return summonerId;
         }
 
         @Override
@@ -263,8 +254,8 @@ public class CurrentGameFragment extends Fragment {
                 teamId = SummonerGameInfo.getInt(TEAM);
                 championId = SummonerGameInfo.getInt(CHAMPION);
 
-                if (teamId == 100) team = "blue";
-                else if (teamId == 200) team = "red";
+                if (teamId == 100) team = "Blue Team";
+                else if (teamId == 200) team = "Red Team";
 
                 resultStrs[i] = name + " - " + team + " - " + championId;
             }

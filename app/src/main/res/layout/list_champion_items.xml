@@ -4,4 +4,4 @@
     android:layout_height="wrap_content"
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:gravity="center_vertical"
-    android:id="@+id/list_aatrox_items_textview"/>
+    android:id="@+id/list_champion_items_textview"/>
