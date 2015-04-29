@@ -1,10 +1,8 @@
 package comgeg0046.github.testapp;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -41,8 +39,6 @@ public class AatroxFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Add this line in order for this fragment to handle menu events.
-        setHasOptionsMenu(true);
     }
 
     @Override
@@ -102,9 +98,6 @@ public class AatroxFragment extends Fragment {
 
     private void updateAatrox() {
         FetchAatroxTask AatroxTask = new FetchAatroxTask();
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        String location = prefs.getString(getString(R.string.pref_location_key),
-            getString(R.string.pref_location_default));
         AatroxTask.execute();
     }
 

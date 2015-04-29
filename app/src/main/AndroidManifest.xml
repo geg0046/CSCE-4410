@@ -3,6 +3,7 @@
     package="comgeg0046.github.testapp" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -24,14 +25,6 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="comgeg0046.github.testapp.MainActivity" />
-        </activity>
-        <activity
-            android:name=".DisplayGame"
-            android:label="@string/title_activity_display_game"
-            android:parentActivityName=".InGameLookup" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="comgeg0046.github.testapp.InGameLookup" />
         </activity>
         <activity
             android:name=".Aatrox"
@@ -300,6 +293,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CurrentGame"
+            android:label="@string/title_activity_current_game"
+            android:parentActivityName=".InGameLookup" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.InGameLookup" />
         </activity>
     </application>
 

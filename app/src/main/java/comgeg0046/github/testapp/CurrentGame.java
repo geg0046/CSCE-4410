@@ -1,28 +1,30 @@
 package comgeg0046.github.testapp;
 
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 
-public class DisplayGame extends ActionBarActivity {
+public class CurrentGame extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_game);
+        setContentView(R.layout.activity_current_game);
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container, new CurrentGameFragment())
+                    .commit();
+        }
+    }
 
-        Intent intent = getIntent();
-        String gameToDisplay = intent.getStringExtra(InGameLookup.GAME_TO_DISPLAY);
 
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText(gameToDisplay);
-
-        setContentView(textView);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_current_game, menu);
+        return true;
     }
 
     @Override

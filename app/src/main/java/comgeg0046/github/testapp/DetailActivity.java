@@ -55,7 +55,6 @@ public class DetailActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
-            startActivity(new Intent(this, comgeg0046.github.testapp.SettingsActivity.class));
             return true;
         }
         return super.onOptionsItemSelected(item);
