@@ -122,6 +122,34 @@ public class ChampionFragment extends Fragment {
             final String DD_DEFENSE = "defense";
             final String DD_MAGIC = "magic";
             final String DD_DIFFICULTY = "difficulty";
+            final String DD_LORE = "lore";
+
+            //Champion "stats"
+            final String DD_HP = "hp";
+            final String DD_HPPL = "hpperlevel";
+            final String DD_MP = "mp";
+            final String DD_MPPL = "mpperlevel";
+            final String DD_MOVESPD = "movespeed";
+            final String DD_ARMOR = "armor";
+            final String DD_ARMORPL = "armorperlevel";
+            final String DD_MR = "spellblock";
+            final String DD_MRPL = "spellblockperlevel";
+            final String DD_AR = "attackrange";
+            final String DD_HPR = "hpregen";
+            final String DD_HPRPL = "hpregenperlevel";
+            final String DD_MPR = "mpregen";
+            final String DD_MPRPL = "mpregenperlevel";
+            final String DD_AD = "attackdamage";
+            final String DD_ADPL = "attackdamageperlevel";
+            final String DD_AS = "attackspeedoffset"; //ASbase = 0.625 / (1 + attackspeedoffset)
+            final String DD_ASPL = "attackspeedperlevel";
+
+            //Champion "spells[]"; Spells are inserted into an array, and read off by their
+            final String DD_SNAME = "name";
+            final String DD_SDESCRIPTION = "description";
+            final String DD_TOOLTIP = "tooltip"; //This might be worth using over the description, but will take some code to synergize with what e1/a1 mean, etc.
+
+
             final String OWM_DESCRIPTION = "main";
 
             JSONObject ChampionData = new JSONObject(ChampionJsonStr);
