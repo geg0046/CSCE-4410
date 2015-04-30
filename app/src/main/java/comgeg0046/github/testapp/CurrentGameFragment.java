@@ -33,6 +33,7 @@ public class CurrentGameFragment extends Fragment {
 
     private ArrayAdapter<String> mSummonersAdapter;
     private String summonerId;
+    private String[] summonerNames = new String[10];
 
     public CurrentGameFragment() {
     }
@@ -81,13 +82,13 @@ public class CurrentGameFragment extends Fragment {
         //Uncomment this section if we want on-click functionality.
         //listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-            //@Override
-            //public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-            //    String summoner = mSummonersAdapter.getItem(position);
-            //    Intent intent = new Intent(getActivity(), SummonerDetailsActivity.class)
-            //            .putExtra(Intent.EXTRA_TEXT, summoner);
-            //    startActivity(intent);
-            //}
+        //@Override
+        //public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+        //    String summoner = summonerNames[position];
+        //    Intent intent = new Intent(getActivity(), SummonerDetailsActivity.class)
+        //            .putExtra(Intent.EXTRA_TEXT, summoner);
+        //    startActivity(intent);
+        //}
         //});
 
         return rootView;
@@ -243,6 +244,7 @@ public class CurrentGameFragment extends Fragment {
             String resultStrs[] = new String[numSummoners];
             for (int i = 0; i < Summoners.length(); i++) {
                 String name;
+                String championName = null;
                 String team = null;
                 int teamId;
                 int championId;
@@ -251,13 +253,140 @@ public class CurrentGameFragment extends Fragment {
                 JSONObject SummonerGameInfo = Summoners.getJSONObject(i);
 
                 name = SummonerGameInfo.getString(SUMMONERNAME);
+                summonerNames[i] = name;
+
                 teamId = SummonerGameInfo.getInt(TEAM);
                 championId = SummonerGameInfo.getInt(CHAMPION);
+
+                if (championId == 1) championName = "Annie";
+                else if (championId == 2) championName = "Olaf";
+                else if (championId == 3) championName = "Galio";
+                else if (championId == 4) championName = "Twisted Fate";
+                else if (championId == 5) championName = "Xin Zhao";
+                else if (championId == 6) championName = "Urgot";
+                else if (championId == 7) championName = "LeBlanc";
+                else if (championId == 8) championName = "Vladimir";
+                else if (championId == 9) championName = "Fiddlesticks";
+                else if (championId == 10) championName = "Kayle";
+                else if (championId == 11) championName = "Master Yi";
+                else if (championId == 12) championName = "Alistar";
+                else if (championId == 13) championName = "Ryze";
+                else if (championId == 14) championName = "Sion";
+                else if (championId == 15) championName = "Sivir";
+                else if (championId == 16) championName = "Soraka";
+                else if (championId == 17) championName = "Teemo";
+                else if (championId == 18) championName = "Tristana";
+                else if (championId == 19) championName = "Wawrwick";
+                else if (championId == 20) championName = "Nunu";
+                else if (championId == 21) championName = "Miss Fortune";
+                else if (championId == 22) championName = "Ashe";
+                else if (championId == 23) championName = "Tryndamere";
+                else if (championId == 24) championName = "Jax";
+                else if (championId == 25) championName = "Morgana";
+                else if (championId == 26) championName = "Zilean";
+                else if (championId == 27) championName = "Singed";
+                else if (championId == 28) championName = "Evelynn";
+                else if (championId == 29) championName = "Twitch";
+                else if (championId == 30) championName = "Karthus";
+                else if (championId == 31) championName = "Cho'Gath";
+                else if (championId == 32) championName = "Amumu";
+                else if (championId == 33) championName = "Rammus";
+                else if (championId == 34) championName = "Anivia";
+                else if (championId == 35) championName = "Shaco";
+                else if (championId == 36) championName = "Dr. Mundo";
+                else if (championId == 37) championName = "Sona";
+                else if (championId == 38) championName = "Kassadin";
+                else if (championId == 39) championName = "Irelia";
+                else if (championId == 40) championName = "Janna";
+                else if (championId == 41) championName = "Gangplank";
+                else if (championId == 42) championName = "Corki";
+                else if (championId == 43) championName = "Karma";
+                else if (championId == 44) championName = "Taric";
+                else if (championId == 45) championName = "Veigar";
+                else if (championId == 48) championName = "Trundle";
+                else if (championId == 50) championName = "Swain";
+                else if (championId == 51) championName = "Caitlyn";
+                else if (championId == 53) championName = "Blitzcrank";
+                else if (championId == 54) championName = "Malphite";
+                else if (championId == 55) championName = "Katarina";
+                else if (championId == 56) championName = "Nocturne";
+                else if (championId == 57) championName = "Maokai";
+                else if (championId == 58) championName = "Renekton";
+                else if (championId == 59) championName = "Jarvan IV";
+                else if (championId == 60) championName = "Elise";
+                else if (championId == 61) championName = "Orianna";
+                else if (championId == 62) championName = "Wukong";
+                else if (championId == 63) championName = "Brand";
+                else if (championId == 64) championName = "Lee Sin";
+                else if (championId == 67) championName = "Vayne";
+                else if (championId == 68) championName = "Rumble";
+                else if (championId == 69) championName = "Cassiopeia";
+                else if (championId == 72) championName = "Skarner";
+                else if (championId == 74) championName = "Heimerdinger";
+                else if (championId == 75) championName = "Nasus";
+                else if (championId == 76) championName = "Nidalee";
+                else if (championId == 77) championName = "Udyr";
+                else if (championId == 78) championName = "Poppy";
+                else if (championId == 79) championName = "Gragas";
+                else if (championId == 80) championName = "Pantheon";
+                else if (championId == 81) championName = "Ezreal";
+                else if (championId == 82) championName = "Mordekaiser";
+                else if (championId == 83) championName = "Yorick";
+                else if (championId == 84) championName = "Akali";
+                else if (championId == 85) championName = "Kennen";
+                else if (championId == 86) championName = "Garen";
+                else if (championId == 89) championName = "Leona";
+                else if (championId == 90) championName = "Malzahar";
+                else if (championId == 91) championName = "Talon";
+                else if (championId == 92) championName = "Riven";
+                else if (championId == 96) championName = "Kog'Maw";
+                else if (championId == 98) championName = "Shen";
+                else if (championId == 99) championName = "Lux";
+                else if (championId == 101) championName = "Xerath";
+                else if (championId == 102) championName = "Shyvana";
+                else if (championId == 103) championName = "Ahri";
+                else if (championId == 104) championName = "Graves";
+                else if (championId == 105) championName = "Fizz";
+                else if (championId == 106) championName = "Volibear";
+                else if (championId == 107) championName = "Rengar";
+                else if (championId == 110) championName = "Varus";
+                else if (championId == 111) championName = "Nautilus";
+                else if (championId == 112) championName = "Viktor";
+                else if (championId == 113) championName = "Sejuani";
+                else if (championId == 114) championName = "Fiora";
+                else if (championId == 115) championName = "Ziggs";
+                else if (championId == 117) championName = "Lulu";
+                else if (championId == 119) championName = "Draven";
+                else if (championId == 120) championName = "Hecarim";
+                else if (championId == 121) championName = "Kha'Zix";
+                else if (championId == 122) championName = "Darius";
+                else if (championId == 126) championName = "Jayce";
+                else if (championId == 127) championName = "Lissandra";
+                else if (championId == 131) championName = "Diana";
+                else if (championId == 133) championName = "Quinn";
+                else if (championId == 134) championName = "Syndra";
+                else if (championId == 143) championName = "Zyra";
+                else if (championId == 150) championName = "Gnar";
+                else if (championId == 154) championName = "Zac";
+                else if (championId == 157) championName = "Yasuo";
+                else if (championId == 161) championName = "Vel'Koz";
+                else if (championId == 201) championName = "Braum";
+                else if (championId == 222) championName = "Jinx";
+                else if (championId == 236) championName = "Lucian";
+                else if (championId == 238) championName = "Zed";
+                else if (championId == 254) championName = "Viktor";
+                else if (championId == 266) championName = "Aatrox";
+                else if (championId == 267) championName = "Nami";
+                else if (championId == 268) championName = "Azir";
+                else if (championId == 412) championName = "Thresh";
+                else if (championId == 421) championName = "Rek'Sai";
+                else if (championId == 429) championName = "Kalista";
+                else if (championId == 432) championName = "Bard";
 
                 if (teamId == 100) team = "Blue Team";
                 else if (teamId == 200) team = "Red Team";
 
-                resultStrs[i] = name + " - " + team + " - " + championId;
+                resultStrs[i] = name + " - " + team + " - " + championName;
             }
 
             return resultStrs;
