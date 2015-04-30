@@ -22,6 +22,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 /**
@@ -116,6 +117,7 @@ public class ChampionFragment extends Fragment {
             // These are the names of the JSON objects that need to be extracted.
             final String DD_DATA = "data";
             final String DD_INFO = "info";
+            final String DD_STATS = "stats";
             final String DD_NAME = championName;
             final String DD_ID = "id";
             final String DD_ATTACK = "attack";
@@ -144,7 +146,7 @@ public class ChampionFragment extends Fragment {
             final String DD_AS = "attackspeedoffset"; //ASbase = 0.625 / (1 + attackspeedoffset)
             final String DD_ASPL = "attackspeedperlevel";
 
-            //Champion "spells[]"; Spells are inserted into an array, and read off by their
+            //Champion "spells[4]"; Spells are inserted into an array, and read off by their
             final String DD_SNAME = "name";
             final String DD_SDESCRIPTION = "description";
             final String DD_TOOLTIP = "tooltip"; //This might be worth using over the description, but will take some code to synergize with what e1/a1 mean, etc.
@@ -170,13 +172,62 @@ public class ChampionFragment extends Fragment {
             String name = ChampionStats.getString(DD_ID);
             String resultStrs = null;
 
+            //Info
             JSONObject infoObject = ChampionStats.getJSONObject(DD_INFO);
             int attack = infoObject.getInt(DD_ATTACK);
             int defense = infoObject.getInt(DD_DEFENSE);
             int magic = infoObject.getInt(DD_MAGIC);
             int difficulty = infoObject.getInt(DD_DIFFICULTY);
 
-            resultStrs = "Champion: " + name + "\nAttack: " + attack + " Defense: " + defense + " Magic: " + magic + " Difficulty: " + difficulty;
+            //Lore
+            String lore = ChampionStats.getString(DD_LORE);
+            lore = lore.replace("<br>", "\n");
+
+            //Stats
+            JSONObject statsObject = ChampionStats.getJSONObject(DD_STATS);
+            double hp = statsObject.getDouble(DD_HP);
+            double hppl = statsObject.getDouble(DD_HPPL);
+            double mp = statsObject.getDouble(DD_MP);
+            double mppl = statsObject.getDouble(DD_MPPL);
+            double armor = statsObject.getDouble(DD_ARMOR);
+            double armorpl = statsObject.getDouble(DD_ARMORPL);
+            double mr = statsObject.getDouble(DD_MR);
+            double mrpl = statsObject.getDouble(DD_MRPL);
+            double movespd = statsObject.getDouble(DD_MOVESPD);
+            double ar = statsObject.getDouble(DD_AR);
+            double hpr = statsObject.getDouble(DD_HPR);
+            double hprpl = statsObject.getDouble(DD_HPRPL);
+            double mpr = statsObject.getDouble(DD_MPR);
+            double mprpl = statsObject.getDouble(DD_MPRPL);
+            double ad = statsObject.getDouble(DD_AD);
+            double adpl = statsObject.getDouble(DD_ADPL);
+            double as = statsObject.getDouble(DD_AS);
+            double aspl = statsObject.getDouble(DD_ASPL);
+
+            double asBase = (0.625 / (1 + as));
+            DecimalFormat newASBase = new DecimalFormat("#.###");
+
+
+
+
+
+            resultStrs = "Champion: " + name + "\nAttack: " + attack + " Defense: " + defense + " Magic: " + magic + " Difficulty: " + difficulty + "\n\n " +
+                         //"Lore: " + lore +
+
+                    "\n\n\nHealth: " + hp + " (+" + hppl + " per level)\n" +
+                    "Health Regen: " + hpr + " (+" + hprpl + " per level)\n" +
+                    "Mana: " + mp + " (+" + mppl + " per level)\n" +
+                    "Mana Regen: " + mpr + " (+" + mprpl + " per level)\n" +
+                    "Attack Damage: " + ad + " (+" + adpl + " per level)\n" +
+                    "Attack Speed: " + newASBase.format(asBase) + " (+" + aspl + "% per level)\n" +
+                    "Attack Range: " + ar + "\n" +
+                    "Armor: " + armor + " (+" + armorpl + " per level)\n" +
+                    "Magic Resistance: " + mr + " (+" + mrpl + " per level)\n" +
+                    "Movement Speed: " + movespd + "\n";
+
+
+
+
 
             Log.v(LOG_TAG, "Champion entry: " + resultStrs);
 
