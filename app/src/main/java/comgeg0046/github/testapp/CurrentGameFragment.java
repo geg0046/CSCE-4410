@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -34,6 +35,7 @@ public class CurrentGameFragment extends Fragment {
     private ArrayAdapter<String> mSummonersAdapter;
     private String summonerId;
     private String[] summonerNames = new String[10];
+    private String[] summonerStr = null;
 
     public CurrentGameFragment() {
     }
@@ -45,7 +47,7 @@ public class CurrentGameFragment extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.championfragment, menu);
+        inflater.inflate(R.menu.currentgamefragment, menu);
     }
 
     @Override
@@ -64,6 +66,12 @@ public class CurrentGameFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        Intent intent = getActivity().getIntent();
+        if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
+            String str = intent.getStringExtra(Intent.EXTRA_TEXT);
+            summonerStr = str.split(" "); //will need to change how this works for summoner names like Annie Bot
+        }
+
         // The ArrayAdapter will take data from a source and
         // use it to populate the ListView it's attached to.
         mSummonersAdapter =
@@ -80,16 +88,17 @@ public class CurrentGameFragment extends Fragment {
         listView.setAdapter(mSummonersAdapter);
 
         //Uncomment this section if we want on-click functionality.
-        //listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-        //@Override
-        //public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-        //    String summoner = summonerNames[position];
-        //    Intent intent = new Intent(getActivity(), SummonerDetailsActivity.class)
-        //            .putExtra(Intent.EXTRA_TEXT, summoner);
-        //    startActivity(intent);
-        //}
-        //});
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+            //String test = mSummonersAdapter.getItem(position);
+            String summoner = summonerNames[position];
+            Intent intent = new Intent(getActivity(), SummonerDetailsActivity.class)
+                    .putExtra(Intent.EXTRA_TEXT, summoner);
+            startActivity(intent);
+        }
+        });
 
         return rootView;
     }
@@ -116,13 +125,10 @@ public class CurrentGameFragment extends Fragment {
         private final String LOG_TAG = FetchCurrentGame.class.getSimpleName();
 
         private void getSummonerIdFromJson(String SummonerJsonStr) throws JSONException{
-            String[] summonerStr = null;
 
-            Intent intent = getActivity().getIntent();
-            if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
-                String str = intent.getStringExtra(Intent.EXTRA_TEXT);
-                summonerStr = str.split(" "); //will need to change how this works for summoner names like Annie Bot
-            }
+
+
+            summonerNames[0] = summonerStr[0].toLowerCase();
 
             //strings to find summoner id
             final String SUM = summonerStr[0].toLowerCase();
@@ -145,13 +151,6 @@ public class CurrentGameFragment extends Fragment {
             BufferedReader reader = null;
 
             String SummonerJsonStr = null;
-            String[] summonerStr = null;
-
-            Intent intent = getActivity().getIntent();
-            if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
-                String str = intent.getStringExtra(Intent.EXTRA_TEXT);
-                summonerStr = str.split(" "); //will need to change how this works for summoner names like Annie Bot
-            }
 
             try {
                 URL url = new URL("https://" + summonerStr[1].toLowerCase() + ".api.pvp.net/api/lol/" + summonerStr[1].toLowerCase() + "/v1.4/summoner/by-name/" + summonerStr[0] + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
@@ -253,7 +252,6 @@ public class CurrentGameFragment extends Fragment {
                 JSONObject SummonerGameInfo = Summoners.getJSONObject(i);
 
                 name = SummonerGameInfo.getString(SUMMONERNAME);
-                summonerNames[i] = name;
 
                 teamId = SummonerGameInfo.getInt(TEAM);
                 championId = SummonerGameInfo.getInt(CHAMPION);
@@ -386,6 +384,9 @@ public class CurrentGameFragment extends Fragment {
                 if (teamId == 100) team = "Blue Team";
                 else if (teamId == 200) team = "Red Team";
 
+
+                summonerNames[i] = summonerStr[1] + "-" + name;
+
                 resultStrs[i] = name + " - " + team + " - " + championName;
             }
 
@@ -401,13 +402,6 @@ public class CurrentGameFragment extends Fragment {
             String CurrentGameJsonStr = null;
 
             int numSummoners = 10;
-            String[] summonerStr = null;
-
-            Intent intent = getActivity().getIntent();
-            if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
-                String str = intent.getStringExtra(Intent.EXTRA_TEXT);
-                summonerStr = str.split(" "); //will need to change how this works for summoner names like Annie Bot
-            }
 
             try {
                 URL url = new URL("https://" + summonerStr[1].toLowerCase() + ".api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/" + summonerStr[1] + "1/" + summonerId + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");

@@ -302,6 +302,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="comgeg0046.github.testapp.InGameLookup" />
         </activity>
+        <activity
+            android:name=".SummonerDetailsActivity"
+            android:label="SummonerDetailsActivity"
+            android:parentActivityName=".CurrentGame" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.CurrentGame" />
+            </activity>
     </application>
 
 </manifest>
