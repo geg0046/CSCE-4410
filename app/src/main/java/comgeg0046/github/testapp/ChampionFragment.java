@@ -148,6 +148,17 @@ public class ChampionFragment extends Fragment {
             final String DD_SNAME = "name";
             final String DD_SDESCRIPTION = "description";
             final String DD_TOOLTIP = "tooltip"; //This might be worth using over the description, but will take some code to synergize with what e1/a1 mean, etc.
+            final String DD_MAXRANK = "maxrank";
+            final String DD_COOLDOWN = "cooldown"; //Array
+            final String DD_COST = "cost"; //Array
+            final String DD_EFFECT = "effect"; //Array
+            final String DD_VARS = "vars"; //Array; "link," "coeff," "key."
+            final String DD_COSTTYPE = "costType";
+            final String DD_RANGE = "range"; //Array
+
+            //Champion "passive"
+            final String DD_PDESCRIPTION = "description";
+            final String DD_IMAGE = "image";
 
 
             final String OWM_DESCRIPTION = "main";
