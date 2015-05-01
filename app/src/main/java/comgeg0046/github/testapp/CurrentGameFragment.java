@@ -299,7 +299,21 @@ public class CurrentGameFragment extends Fragment {
             int numSummoners = 10;
 
             try {
-                URL url = new URL("https://" + region.toLowerCase() + ".api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/" + region + "1/" + summonerId + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
+                URL url;
+
+                if (region.equals("EUNE") || region.equals("OCE") || region.equals("LAS")) {
+                    String secondRegion = region.substring(0, region.length() - 1);
+
+                    if (region.equals("LAS"))
+                      secondRegion = secondRegion + "2";
+                    else
+                        secondRegion = secondRegion + "1";
+
+                    url = new URL("https://" + region.toLowerCase() + ".api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/" + secondRegion + "/" + summonerId + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
+                }
+                else {
+                    url = new URL("https://" + region.toLowerCase() + ".api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/" + region + "1/" + summonerId + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
+                }
 
                 Log.v(LOG_TAG, "Built URL: " + url.toString());
 

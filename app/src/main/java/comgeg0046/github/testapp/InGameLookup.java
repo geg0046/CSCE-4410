@@ -18,7 +18,7 @@ public class InGameLookup extends ActionBarActivity {
         setContentView(R.layout.activity_in_game_lookup);
 
         Spinner dropdown = (Spinner)findViewById(R.id.spinner);
-        String[] items = new String[]{"NA", "EUW", "KR", "OCE", "EUNE", "BR", "LAN", "LAS", "RU", "TR"};
+        String[] items = new String[]{"NA", "EUW", "EUNE", "OCE", "BR", "LAS", "TR"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, items);
         dropdown.setAdapter(adapter);
     }

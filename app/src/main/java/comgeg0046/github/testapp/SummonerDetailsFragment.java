@@ -166,7 +166,7 @@ public class SummonerDetailsFragment extends Fragment {
             //}
 
             try {
-                URL url = new URL("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/" + summonerName + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
+                URL url = new URL("https://" + summonerRegion + ".api.pvp.net/api/lol/" + summonerRegion + "/v1.4/summoner/by-name/" + summonerName + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
 
                 Log.v(LOG_TAG, "Built URL: " + url.toString());
 
@@ -350,7 +350,21 @@ public class SummonerDetailsFragment extends Fragment {
             String CurrentGameJsonStr = null;
 
             try {
-                URL url = new URL("https://" + summonerRegion + ".api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/" + summonerRegion + "1/" + summonerId + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
+                URL url;
+
+                if (summonerRegion.equals("EUNE") || summonerRegion.equals("OCE") || summonerRegion.equals("LAS")) {
+                    String secondRegion = summonerRegion.substring(0, summonerRegion.length() - 1);
+
+                    if (summonerRegion.equals("LAS"))
+                        secondRegion = secondRegion + "2";
+                    else
+                        secondRegion = secondRegion + "1";
+
+                    url = new URL("https://" + summonerRegion.toLowerCase() + ".api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/" + secondRegion + "/" + summonerId + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
+                }
+                else {
+                    url = new URL("https://" + summonerRegion.toLowerCase() + ".api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/" + summonerRegion + "1/" + summonerId + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
+                }
                 //URL url = new URL("https://na.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/NA1/20672928?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
 
                 Log.v(LOG_TAG, "Built URL: " + url.toString());
