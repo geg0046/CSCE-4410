@@ -12,6 +12,16 @@ public class Azir extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_azir);
+        if(savedInstanceState == null){
+            Bundle bundle = new Bundle();
+            bundle.putString("name", "Azir");
+            ChampionFragment fragInfo = new ChampionFragment();
+            fragInfo.setArguments(bundle);
+
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container, fragInfo)
+                    .commit();
+        }
     }
 
 

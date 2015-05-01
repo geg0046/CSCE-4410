@@ -12,6 +12,16 @@ public class Chogath extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chogath);
+        if(savedInstanceState == null){
+            Bundle bundle = new Bundle();
+            bundle.putString("name", "Chogath");
+            ChampionFragment fragInfo = new ChampionFragment();
+            fragInfo.setArguments(bundle);
+
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container, fragInfo)
+                    .commit();
+        }
     }
 
 

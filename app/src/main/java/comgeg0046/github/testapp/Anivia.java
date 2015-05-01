@@ -12,6 +12,16 @@ public class Anivia extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anivia);
+        if(savedInstanceState == null){
+            Bundle bundle = new Bundle();
+            bundle.putString("name", "Anivia");
+            ChampionFragment fragInfo = new ChampionFragment();
+            fragInfo.setArguments(bundle);
+
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container, fragInfo)
+                    .commit();
+        }
     }
 
 

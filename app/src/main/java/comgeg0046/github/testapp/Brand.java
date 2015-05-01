@@ -12,6 +12,16 @@ public class Brand extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_brand);
+        if(savedInstanceState == null){
+            Bundle bundle = new Bundle();
+            bundle.putString("name", "Brand");
+            ChampionFragment fragInfo = new ChampionFragment();
+            fragInfo.setArguments(bundle);
+
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container, fragInfo)
+                    .commit();
+        }
     }
 
 
