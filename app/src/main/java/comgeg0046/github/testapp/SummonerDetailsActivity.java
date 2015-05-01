@@ -17,11 +17,14 @@ public class SummonerDetailsActivity extends ActionBarActivity {
             Intent intent = getIntent();
             if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
                 String str = intent.getStringExtra(Intent.EXTRA_TEXT);
-                String[] summonerStr = str.split("-");
+                String[] summonerStr = str.split(" ");
+
+                String region = summonerStr[0];
+                String summonerName = summonerStr[1];
 
                 Bundle bundle = new Bundle();
-                bundle.putString("region", summonerStr[0]);
-                bundle.putString("name", summonerStr[1]);
+                bundle.putString("region", region);
+                bundle.putString("name", summonerName);
                 SummonerDetailsFragment fragInfo = new SummonerDetailsFragment();
                 fragInfo.setArguments(bundle);
 

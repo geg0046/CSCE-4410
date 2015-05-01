@@ -68,6 +68,7 @@ public class SummonerDetailsFragment extends Fragment {
         summonerRegion = this.getArguments().getString("region");
         summonerName = this.getArguments().getString("name");
 
+
         // The ArrayAdapter will take data from a source and
         // use it to populate the ListView it's attached to.
         mDetailsAdapter =
@@ -140,6 +141,9 @@ public class SummonerDetailsFragment extends Fragment {
             summonerId = sumId;
 
             summonerStr = "Name: " + summonerName + ", ID: " + summonerId + ", Region: " + summonerRegion;
+
+
+            Log.v(LOG_TAG, "Summoner Entry: " + summonerStr);
 
             Log.v(LOG_TAG, "Summoner Entry: " + summonerId);
 

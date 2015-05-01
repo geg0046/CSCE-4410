@@ -40,8 +40,11 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         //int id = item.getItemId();
         switch (item.getItemId()) {
-            case R.id.IGL:
-                lookUp();
+            case R.id.InGameLookup:
+                currentGameLookUp();
+                return true;
+            case R.id.FeaturedGamesLookUp:
+                featuredGamesLookUp();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -51,9 +54,14 @@ public class MainActivity extends ActionBarActivity {
     /**
      * Called when the user clicks the In-Game Lookup button
      */
-    public void lookUp() {
-        Intent LookUp = new Intent(this, InGameLookup.class);
-        startActivity(LookUp);
+    public void currentGameLookUp() {
+        Intent currentLookUp = new Intent(this, InGameLookup.class);
+        startActivity(currentLookUp);
+    }
+
+    public void featuredGamesLookUp(){
+        Intent featuredLookUp = new Intent(this, FeaturedGamesLookup.class);
+        startActivity(featuredLookUp);
     }
 
     /*public void Aatrox(){

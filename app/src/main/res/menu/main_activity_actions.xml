@@ -5,9 +5,16 @@
 
 
     <!-- Creates the overflow menu within the launch page -->
-    <item android:id="@+id/IGL"
+    <item
+        android:id="@+id/InGameLookup"
         android:orderInCategory="1"
-        android:title="@string/Lookup"
+        android:title="@string/currentGameLookup"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/FeaturedGamesLookUp"
+        android:orderInCategory="2"
+        android:title="@string/featuredGamesLookup"
         app:showAsAction="never"/>
 
 

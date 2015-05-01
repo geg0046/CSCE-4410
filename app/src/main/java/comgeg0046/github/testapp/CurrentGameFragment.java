@@ -36,6 +36,8 @@ public class CurrentGameFragment extends Fragment {
     private String summonerId;
     private String[] summonerNames = new String[10];
     private String[] summonerStr = null;
+    private String region = null;
+    private String summonerName = "";
 
     public CurrentGameFragment() {
     }
@@ -94,8 +96,20 @@ public class CurrentGameFragment extends Fragment {
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
             //String test = mSummonersAdapter.getItem(position);
             String summoner = summonerNames[position];
+            String[] summonerStrName = summoner.split(" ");
+
+            String region = summonerStrName[0];
+            String summonerName = "";
+
+            for (int i = 1; i < summonerStrName.length; i++) {
+                if (summonerStrName[i] != "-" && summonerStrName[i] != " ")
+                    summonerName = summonerName + summonerStrName[i];
+            }
+
+            String correctStr = region + " " + summonerName;
+
             Intent intent = new Intent(getActivity(), SummonerDetailsActivity.class)
-                    .putExtra(Intent.EXTRA_TEXT, summoner);
+                    .putExtra(Intent.EXTRA_TEXT, correctStr);
             startActivity(intent);
         }
         });
@@ -126,12 +140,8 @@ public class CurrentGameFragment extends Fragment {
 
         private void getSummonerIdFromJson(String SummonerJsonStr) throws JSONException{
 
-
-
-            summonerNames[0] = summonerStr[0].toLowerCase();
-
             //strings to find summoner id
-            final String SUM = summonerStr[0].toLowerCase();
+            final String SUM = summonerName.toLowerCase();
             final String SUMID = "id";
 
             JSONObject SummonerData = new JSONObject(SummonerJsonStr);
@@ -152,8 +162,16 @@ public class CurrentGameFragment extends Fragment {
 
             String SummonerJsonStr = null;
 
+            region = summonerStr[0];
+
+            for (int i = 1; i < summonerStr.length; i++) {
+                summonerName = summonerName + summonerStr[i];
+            }
+
+
+
             try {
-                URL url = new URL("https://" + summonerStr[1].toLowerCase() + ".api.pvp.net/api/lol/" + summonerStr[1].toLowerCase() + "/v1.4/summoner/by-name/" + summonerStr[0] + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
+                URL url = new URL("https://" + region.toLowerCase() + ".api.pvp.net/api/lol/" + region.toLowerCase() + "/v1.4/summoner/by-name/" + summonerName + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
 
                 Log.v(LOG_TAG, "Built URL: " + url.toString());
 
@@ -262,7 +280,7 @@ public class CurrentGameFragment extends Fragment {
                 else if (teamId == 200) team = "Red Team";
 
 
-                summonerNames[i] = summonerStr[1] + "-" + name;
+                summonerNames[i] = region + " " + name;
 
                 resultStrs[i] = name + " - " + team + " - " + championName;
             }
@@ -281,8 +299,7 @@ public class CurrentGameFragment extends Fragment {
             int numSummoners = 10;
 
             try {
-                URL url = new URL("https://" + summonerStr[1].toLowerCase() + ".api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/" + summonerStr[1] + "1/" + summonerId + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
-                //URL url = new URL("https://na.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/NA1/20672928?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
+                URL url = new URL("https://" + region.toLowerCase() + ".api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/" + region + "1/" + summonerId + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
 
                 Log.v(LOG_TAG, "Built URL: " + url.toString());
 

@@ -310,6 +310,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="comgeg0046.github.testapp.CurrentGame" />
             </activity>
+        <activity
+            android:name=".FeaturedGamesLookup"
+            android:label="@string/title_activity_featured_game_lookup"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FeaturedGamesActivity"
+            android:label="@string/title_activity_featured_games"
+            android:parentActivityName=".FeaturedGamesLookup" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.FeaturedGamesLookup" />
+        </activity>
     </application>
 
 </manifest>
