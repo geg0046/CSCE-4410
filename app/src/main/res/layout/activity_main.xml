@@ -2413,9 +2413,9 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/Wukong"
-                android:background="@drawable/wuthumb"
-                android:onClick="Wukong"/>
+                android:id="@+id/Warwick"
+                android:background="@drawable/wwthumb"
+                android:onClick="Warwick"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2424,7 +2424,7 @@
                 android:text="@string/Champion114"
                 android:id="@+id/textView108"
                 android:layout_gravity="center"
-                android:onClick="Wukong"/>
+                android:onClick="Warwick"/>
         </TableRow>
 
         <TableRow
@@ -2434,9 +2434,9 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/Warwick"
-                android:background="@drawable/wwthumb"
-                android:onClick="Warwick"/>
+                android:id="@+id/Wukong"
+                android:background="@drawable/wuthumb"
+                android:onClick="Wukong"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2445,7 +2445,7 @@
                 android:text="@string/Champion115"
                 android:id="@+id/textView109"
                 android:layout_gravity="center"
-                android:onClick="Warwick"/>
+                android:onClick="Wukong"/>
         </TableRow>
 
         <TableRow
