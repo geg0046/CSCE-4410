@@ -89,12 +89,10 @@ public class CurrentGameFragment extends Fragment {
         ListView listView = (ListView) rootView.findViewById(R.id.listview_current_game);
         listView.setAdapter(mSummonersAdapter);
 
-        //Uncomment this section if we want on-click functionality.
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-            //String test = mSummonersAdapter.getItem(position);
             String summoner = summonerNames[position];
             String[] summonerStrName = summoner.split(" ");
 
@@ -136,8 +134,6 @@ public class CurrentGameFragment extends Fragment {
 
     public class FetchSummonerId extends AsyncTask<String, Void, String> {
 
-        private final String LOG_TAG = FetchCurrentGame.class.getSimpleName();
-
         private void getSummonerIdFromJson(String SummonerJsonStr) throws JSONException{
 
             //strings to find summoner id
@@ -150,8 +146,6 @@ public class CurrentGameFragment extends Fragment {
             String sumId = SummonerInfo.getString(SUMID);
 
             summonerId = sumId;
-
-            Log.v(LOG_TAG, "Summoner Entry: " + summonerId);
         }
 
         @Override
@@ -173,7 +167,6 @@ public class CurrentGameFragment extends Fragment {
             try {
                 URL url = new URL("https://" + region.toLowerCase() + ".api.pvp.net/api/lol/" + region.toLowerCase() + "/v1.4/summoner/by-name/" + summonerName + "?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
 
-                Log.v(LOG_TAG, "Built URL: " + url.toString());
 
                 // Create the request to OpenWeatherMap, and open the connection
                 urlConnection = (HttpURLConnection) url.openConnection();
@@ -203,9 +196,9 @@ public class CurrentGameFragment extends Fragment {
                 }
                 SummonerJsonStr = buffer.toString();
 
-                Log.v(LOG_TAG, "SummonerJsonStr: " + SummonerJsonStr);
+
             } catch (IOException e) {
-                Log.e(LOG_TAG, "Error ", e);
+
                 // If the code didn't successfully get the weather data, there's no point in attempting
                 // to parse it.
                 return null;
@@ -217,14 +210,12 @@ public class CurrentGameFragment extends Fragment {
                     try {
                         reader.close();
                     } catch (final IOException e) {
-                        Log.e("LOG_TAG", "Error closing stream", e);
                     }
                 }
             }
             try {
                 getSummonerIdFromJson(SummonerJsonStr);
             } catch (JSONException e) {
-                Log.e(LOG_TAG, e.getMessage(), e);
                 e.printStackTrace();
             }
 
@@ -250,7 +241,6 @@ public class CurrentGameFragment extends Fragment {
 
             //strings to find other players and game stats
             final String SUMMONERS = "participants";
-            final String TIME = "gameLength";
             final String TEAM = "teamId";
             final String CHAMPION = "championId";
             final String SUMMONERNAME = "summonerName";
@@ -345,9 +335,7 @@ public class CurrentGameFragment extends Fragment {
                 }
                 CurrentGameJsonStr = buffer.toString();
 
-                Log.v(LOG_TAG, "CurrentGameJsonStr: " + CurrentGameJsonStr);
             } catch (IOException e) {
-                Log.e(LOG_TAG, "Error ", e);
                 // If the code didn't successfully get the weather data, there's no point in attempting
                 // to parse it.
                 return null;
@@ -359,14 +347,13 @@ public class CurrentGameFragment extends Fragment {
                     try {
                         reader.close();
                     } catch (final IOException e) {
-                        Log.e("LOG_TAG", "Error closing stream", e);
+
                     }
                 }
             }
             try {
                 return getCurrentGameDataFromJson(CurrentGameJsonStr, numSummoners);
             } catch (JSONException e) {
-                Log.e(LOG_TAG, e.getMessage(), e);
                 e.printStackTrace();
             }
 

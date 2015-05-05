@@ -9,20 +9,12 @@ import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
 
-    //@Override
-  /*  public void onClick(View x){
-        switch (x.getId()){
-           // case R.id.Aatrox: Aatrox();
-            break;
-        }
-    }*/
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //      Button bttn = (Button) findViewById(R.id.button_id);
-        //    bttn.setOnClickListener(this);
     }
 
 

@@ -103,63 +103,7 @@ public class ChampionFragment extends Fragment {
         updateChampion();
     }
 
-    /**
-     * Returns a CharSequence that concatenates the specified array of CharSequence
-     * objects and then applies a list of zero or more tags to the entire range.
-     *
-     * @param content an array of character sequences to apply a style to
-     * @param tags the styled span objects to apply to the content
-     *        such as android.text.style.StyleSpan
-     *
-     */
-    private static CharSequence apply(CharSequence[] content, Object... tags) {
-        SpannableStringBuilder text = new SpannableStringBuilder();
-        openTags(text, tags);
-        for (CharSequence item : content) {
-            text.append(item);
-        }
-        closeTags(text, tags);
-        return text;
-    }
-
-    /**
-     * Iterates over an array of tags and applies them to the beginning of the specified
-     * Spannable object so that future text appended to the text will have the styling
-     * applied to it. Do not call this method directly.
-     */
-    private static void openTags(Spannable text, Object[] tags) {
-        for (Object tag : tags) {
-            text.setSpan(tag, 0, 0, Spannable.SPAN_MARK_MARK);
-        }
-    }
-
-    /**
-     * "Closes" the specified tags on a Spannable by updating the spans to be
-     * endpoint-exclusive so that future text appended to the end will not take
-     * on the same styling. Do not call this method directly.
-     */
-    private static void closeTags(Spannable text, Object[] tags) {
-        int len = text.length();
-        for (Object tag : tags) {
-            if (len > 0) {
-                text.setSpan(tag, 0, len, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-            } else {
-                text.removeSpan(tag);
-            }
-        }
-    }
-
-    /**
-     * Returns a CharSequence that applies a foreground color to the
-     * concatenation of the specified CharSequence objects.
-     */
-    public static CharSequence color(int color, CharSequence... content) {
-        return apply(content, new ForegroundColorSpan(color));
-    }
-
     public class FetchChampionTask extends AsyncTask<String, Void, String> {
-
-        private final String LOG_TAG = FetchChampionTask.class.getSimpleName();
 
         private String getChampionDataFromJson(String ChampionJsonStr)
                 throws JSONException{
@@ -176,7 +120,6 @@ public class ChampionFragment extends Fragment {
             final String DD_DEFENSE = "defense";
             final String DD_MAGIC = "magic";
             final String DD_DIFFICULTY = "difficulty";
-            final String DD_LORE = "lore";
 
             //Champion "stats"
             final String DD_HP = "hp";
@@ -214,10 +157,6 @@ public class ChampionFragment extends Fragment {
 
             //Champion "passive"
             final String DD_PDESCRIPTION = "description";
-            final String DD_IMAGE = "image";
-
-
-            final String OWM_DESCRIPTION = "main";
 
             JSONObject ChampionData = new JSONObject(ChampionJsonStr);
             JSONObject Champion = ChampionData.getJSONObject(DD_DATA);
@@ -232,10 +171,6 @@ public class ChampionFragment extends Fragment {
             int defense = infoObject.getInt(DD_DEFENSE);
             int magic = infoObject.getInt(DD_MAGIC);
             int difficulty = infoObject.getInt(DD_DIFFICULTY);
-
-            //Lore
-           /* String lore = ChampionStats.getString(DD_LORE);
-            lore = lore.replace("<br>", "\n"); */
 
             //Stats
             JSONObject statsObject = ChampionStats.getJSONObject(DD_STATS);
@@ -409,25 +344,15 @@ public class ChampionFragment extends Fragment {
 
                         if (sTooltip.contains("{{ a" + j)) {
 
-                            //for(int k = 0; k < vars.length(); k++) {
-                            //JSONObject eleVar = vars.getJSONObject(k);
-                            //String key = eleVar.getString(DD_KEY);
-
-
                             String replacement = coeff[j];
                             int startIndex = sTooltip.indexOf("{{ a" + j);
                             int endIndex = sTooltip.indexOf("a" + j + " }}");
                             String toBeReplaced = sTooltip.substring(startIndex, endIndex + 5);
                             sTooltip = sTooltip.replace(toBeReplaced, replacement);
 
-
-                            //}
                         }
                         if (sTooltip.contains("{{ f" + j)) {
 
-                            //for(int k = 0; k < vars.length(); k++) {
-                            //JSONObject eleVar = vars.getJSONObject(k);
-                            //String key = eleVar.getString(DD_KEY);
                             if(coefff[j] != null) {
                                 String replacement = coefff[j];
                                 int startIndex = sTooltip.indexOf("{{ f" + j);
@@ -444,10 +369,6 @@ public class ChampionFragment extends Fragment {
                                 sTooltip = sTooltip.replace(toBeReplaced, replacement);
                             }
                         }
-
-
-                            //}
-
                     }
                 }
 
@@ -463,12 +384,6 @@ public class ChampionFragment extends Fragment {
                 resultStrs = resultStrs + sTooltip + "\n\n\n";
 
             }
-
-
-
-
-
-            Log.v(LOG_TAG, "Champion entry: " + resultStrs);
 
             return resultStrs;
 
@@ -492,8 +407,6 @@ public class ChampionFragment extends Fragment {
                 // http://openweathermap.org/API#forecast
 
                 URL url = new URL("http://ddragon.leagueoflegends.com/cdn/5.7.2/data/en_US/champion/" + championName + ".json");
-
-                Log.v(LOG_TAG, "Built URL: " + url.toString());
 
                 // Create the request to OpenWeatherMap, and open the connection
                 urlConnection = (HttpURLConnection) url.openConnection();
@@ -523,9 +436,7 @@ public class ChampionFragment extends Fragment {
                 }
                 ChampionJsonStr = buffer.toString();
 
-                Log.v(LOG_TAG, "Champion String: " + ChampionJsonStr);
             } catch (IOException e) {
-                Log.e(LOG_TAG, "Error ", e);
                 // If the code didn't successfully get the weather data, there's no point in attempting
                 // to parse it.
                 return null;
@@ -537,7 +448,6 @@ public class ChampionFragment extends Fragment {
                     try {
                         reader.close();
                     } catch (final IOException e) {
-                        Log.e("LOG_TAG", "Error closing stream", e);
                     }
                 }
             }
@@ -545,8 +455,7 @@ public class ChampionFragment extends Fragment {
             try {
                 return getChampionDataFromJson(ChampionJsonStr);
             } catch (JSONException e) {
-                Log.e(LOG_TAG, e.getMessage(), e);
-                e.printStackTrace();
+
             }
 
             //This will only happen if there was an error getting or parsing the forecast.
