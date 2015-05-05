@@ -305,7 +305,16 @@ public class ChampionFragment extends Fragment {
                     eBurn[j] = effectBurn.getString(j);
                 }
 
-                resultStrs = resultStrs + sName + ":\n\n";
+                resultStrs = resultStrs + sName;
+                if(i == 0)
+                    resultStrs = resultStrs + " (Q):\n\n";
+                if(i == 1)
+                    resultStrs = resultStrs + " (W):\n\n";
+                if(i == 2)
+                    resultStrs = resultStrs + " (E):\n\n";
+                if(i == 3)
+                    resultStrs = resultStrs + " (R):\n\n";
+
 
                 if (sResource.contains("{{ e"))
                 {
