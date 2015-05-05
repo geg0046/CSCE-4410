@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="comgeg0046.github.testapp" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -17,8 +19,580 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DisplayMessageActivity"
-            android:label="@string/title_activity_display_message"
+            android:name=".InGameLookup"
+            android:label="@string/title_activity_in_game_lookup"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Aatrox"
+            android:label="@string/title_activity_aatrox"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Ahri"
+            android:label="@string/title_activity_ahri"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Akali"
+            android:label="@string/title_activity_akali"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Alistar"
+            android:label="@string/title_activity_alistar"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Amumu"
+            android:label="@string/title_activity_amumu"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Annie"
+            android:label="@string/title_activity_annie"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Ashe"
+            android:label="@string/title_activity_ashe"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Azir"
+            android:label="@string/title_activity_azir"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Blitzcrank"
+            android:label="@string/title_activity_blitzcrank" >
+        </activity>
+        <activity
+            android:name=".Brand"
+            android:label="@string/title_activity_brand"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Braum"
+            android:label="@string/title_activity_braum"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Caitlyn"
+            android:label="@string/title_activity_caitlyn"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Cassiopeia"
+            android:label="@string/title_activity_cassiopeia"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Bard"
+            android:label="@string/title_activity_bard"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Chogath"
+            android:label="@string/title_activity_chogath"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Corki"
+            android:label="@string/title_activity_corki"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Darius"
+            android:label="@string/title_activity_darius"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Diana"
+            android:label="@string/title_activity_diana"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DMundo"
+            android:label="@string/title_activity_dmundo"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Draven"
+            android:label="@string/title_activity_draven"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Elise"
+            android:label="@string/title_activity_elise"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Evelynn"
+            android:label="@string/title_activity_evelynn"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Ezreal"
+            android:label="@string/title_activity_ezreal"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Fiddlesticks"
+            android:label="@string/title_activity_fiddlesticks"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Fiora"
+            android:label="@string/title_activity_fiora"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Fizz"
+            android:label="@string/title_activity_fizz"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Galio"
+            android:label="@string/title_activity_galio"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Gangplank"
+            android:label="@string/title_activity_gangplank"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Garen"
+            android:label="@string/title_activity_garen"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Gnar"
+            android:label="@string/title_activity_gnar"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Gragas"
+            android:label="@string/title_activity_gragas"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Hecarim"
+            android:label="@string/title_activity_hecarim"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Graves"
+            android:label="@string/title_activity_graves"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Anivia"
+            android:label="@string/title_activity_anivia"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CurrentGame"
+            android:label="@string/title_activity_current_game"
+            android:parentActivityName=".InGameLookup" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.InGameLookup" />
+        </activity>
+        <activity
+            android:name=".SummonerDetailsActivity"
+            android:label="SummonerDetailsActivity"
+            android:parentActivityName=".CurrentGame" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.CurrentGame" />
+        </activity>
+        <activity
+            android:name=".FeaturedGamesLookup"
+            android:label="@string/title_activity_featured_game_lookup"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FeaturedGamesActivity"
+            android:label="@string/title_activity_featured_games"
+            android:parentActivityName=".FeaturedGamesLookup" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.FeaturedGamesLookup" />
+        </activity>
+        <activity
+            android:name=".Heimerdinger"
+            android:label="@string/title_activity_heimerdinger" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Irelia"
+            android:label="@string/title_activity_irelia" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Janna"
+            android:label="@string/title_activity_janna" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".JarvanIV"
+            android:label="@string/title_activity_jarvan_iv" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Jax"
+            android:label="@string/title_activity_jax" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Jayce"
+            android:label="@string/title_activity_jayce" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Jinx"
+            android:label="@string/title_activity_jinx" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Kalista"
+            android:label="@string/title_activity_kalista" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Karma"
+            android:label="@string/title_activity_karma" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Karthus"
+            android:label="@string/title_activity_karthus" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Kassadin"
+            android:label="@string/title_activity_kassadin" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Katarina"
+            android:label="@string/title_activity_katarina" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Kayle"
+            android:label="@string/title_activity_kayle" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Kennen"
+            android:label="@string/title_activity_kennen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".KhaZix"
+            android:label="@string/title_activity_kha_zix" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".KogMaw"
+            android:label="@string/title_activity_kog_maw" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LeBlanc"
+            android:label="@string/title_activity_le_blanc"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LeeSin"
+            android:label="@string/title_activity_lee_sin"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Leona"
+            android:label="@string/title_activity_leona"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Lissandra"
+            android:label="@string/title_activity_lissandra"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Lucian"
+            android:label="@string/title_activity_lucian"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LuLu"
+            android:label="@string/title_activity_lu_lu"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Lux"
+            android:label="@string/title_activity_lux"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Malphite"
+            android:label="@string/title_activity_malphite"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Malzahar"
+            android:label="@string/title_activity_malzahar"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Maokai"
+            android:label="@string/title_activity_maokai"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MasterYi"
+            android:label="@string/title_activity_master_yi"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MissFortune"
+            android:label="@string/title_activity_miss_fortune"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Mordekaiser"
+            android:label="@string/title_activity_mordekaiser"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Morgana"
+            android:label="@string/title_activity_morgana"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Nami"
+            android:label="@string/title_activity_nami"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Nasus"
+            android:label="@string/title_activity_nasus"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Nautilus"
+            android:label="@string/title_activity_nautilus"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Nidalee"
+            android:label="@string/title_activity_nidalee"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Nocturne"
+            android:label="@string/title_activity_nocturne"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="comgeg0046.github.testapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Nunu"
+            android:label="@string/title_activity_nunu"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
