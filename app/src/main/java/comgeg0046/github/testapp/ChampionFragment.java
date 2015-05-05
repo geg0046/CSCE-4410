@@ -360,8 +360,8 @@ public class ChampionFragment extends Fragment {
 
                 JSONArray vars = sDetails.getJSONArray(DD_VARS);
                 if(!vars.equals(null)) {
-                    String[] coeff = new String[vars.length() + 1];
-                    String[] coefff = new String[vars.length() + 1];
+                    String[] coeff = new String[vars.length() + 5];
+                    String[] coefff = new String[vars.length() + 5];
 
                     for (int j = 0; j < vars.length(); j++) {
                         JSONObject var = vars.getJSONObject(j);
