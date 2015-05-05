@@ -34,8 +34,7 @@ public class FeaturedGamesFragment extends Fragment {
 
     private ArrayAdapter<String> mFeaturedGamesAdapter;
     private String[] summonerNames = new String[5];
-    private String[] summonerStr = null;
-    private String summonerName = "";
+
     private String region;
 
     public FeaturedGamesFragment() {
@@ -87,12 +86,10 @@ public class FeaturedGamesFragment extends Fragment {
         ListView listView = (ListView) rootView.findViewById(R.id.listview_featured_games);
         listView.setAdapter(mFeaturedGamesAdapter);
 
-        //Uncomment this section if we want on-click functionality.
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                //String test = mSummonersAdapter.getItem(position);
                 String summoner = summonerNames[position];
                 Intent intent = new Intent(getActivity(), CurrentGame.class)
                         .putExtra(Intent.EXTRA_TEXT, summoner);
@@ -116,14 +113,12 @@ public class FeaturedGamesFragment extends Fragment {
 
     public class FetchFeaturedGames extends AsyncTask<String, Void, String[]> {
 
-        private final String LOG_TAG = FetchFeaturedGames.class.getSimpleName();
 
         private String[] getCurrentGameDataFromJson(String CurrentGameJsonStr, int numFeaturedGames) throws JSONException{
 
             //strings to find other players and game stats
             final String FEATURED = "gameList";
             final String SUMMONERS = "participants";
-            final String TIME = "gameLength";
             final String SUMMONERNAME = "summonerName";
 
             JSONObject JSONData = new JSONObject(CurrentGameJsonStr);
@@ -176,7 +171,7 @@ public class FeaturedGamesFragment extends Fragment {
             try {
                 URL url = new URL("https://" + region.toLowerCase() + ".api.pvp.net/observer-mode/rest/featured?api_key=a7e48163-f846-4502-b7c6-2cd202df5d3a");
 
-                Log.v(LOG_TAG, "Built URL: " + url.toString());
+
 
                 // Create the request to OpenWeatherMap, and open the connection
                 urlConnection = (HttpURLConnection) url.openConnection();
@@ -206,9 +201,9 @@ public class FeaturedGamesFragment extends Fragment {
                 }
                 CurrentGameJsonStr = buffer.toString();
 
-                Log.v(LOG_TAG, "CurrentGameJsonStr: " + CurrentGameJsonStr);
+
             } catch (IOException e) {
-                Log.e(LOG_TAG, "Error ", e);
+
                 // If the code didn't successfully get the weather data, there's no point in attempting
                 // to parse it.
                 return null;
@@ -220,14 +215,14 @@ public class FeaturedGamesFragment extends Fragment {
                     try {
                         reader.close();
                     } catch (final IOException e) {
-                        Log.e("LOG_TAG", "Error closing stream", e);
+
                     }
                 }
             }
             try {
                 return getCurrentGameDataFromJson(CurrentGameJsonStr, numFeaturedGames);
             } catch (JSONException e) {
-                Log.e(LOG_TAG, e.getMessage(), e);
+
                 e.printStackTrace();
             }
 

@@ -14,7 +14,7 @@ public class Heimerdinger extends ActionBarActivity {
         setContentView(R.layout.activity_heimerdinger);
         if(savedInstanceState == null){
             Bundle bundle = new Bundle();
-            bundle.putString("name", "Herimerdinger");
+            bundle.putString("name", "Heimerdinger");
             ChampionFragment fragInfo = new ChampionFragment();
             fragInfo.setArguments(bundle);
 

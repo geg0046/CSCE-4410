@@ -31,8 +31,7 @@
                 android:id="@+id/Aatrox"
                 android:src="@drawable/aatroxthumb"
                 android:background="@drawable/aatroxthumb"
-                android:onClick="Aatrox"
-                />
+                android:onClick="Aatrox"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -41,6 +40,7 @@
                 android:text="@string/Champion1"
                 android:id="@+id/AatroxDesc"
                 android:layout_gravity="center"
+                android:textColor="#fff7ffe2"
                 android:onClick="Aatrox" />
 
 
@@ -64,6 +64,7 @@
                 android:text="@string/Champion2"
                 android:id="@+id/AhriDesc"
                 android:layout_gravity="center"
+                android:textColor="#fff7ffe2"
                 android:onClick="Ahri" />
         </TableRow>
 
@@ -85,6 +86,7 @@
                 android:text="@string/Champion3"
                 android:id="@+id/AkaliDesc"
                 android:layout_gravity="center"
+                android:textColor="#fff7ffe2"
                 android:onClick="Akali" />
         </TableRow>
 
@@ -106,6 +108,7 @@
                 android:text="@string/Champion4"
                 android:id="@+id/AliDesc"
                 android:layout_gravity="center"
+                android:textColor="#fff7ffe2"
                 android:onClick="Alistar"/>
         </TableRow>
 
@@ -127,6 +130,7 @@
                 android:text="@string/Champion5"
                 android:id="@+id/AmumuDesc"
                 android:layout_gravity="center"
+                android:textColor="#fff7ffe2"
                 android:onClick="Amumu" />
         </TableRow>
 
@@ -148,6 +152,7 @@
                 android:text="@string/Champion6"
                 android:id="@+id/AnivDesc"
                 android:layout_gravity="center"
+                android:textColor="#fff7ffe2"
                 android:onClick="Anivia" />
         </TableRow>
 
@@ -169,6 +174,7 @@
                 android:text="@string/Champion7"
                 android:id="@+id/AnnieDesc"
                 android:layout_gravity="center"
+                android:textColor="#fff7ffe2"
                 android:onClick="Annie" />
         </TableRow>
 
@@ -190,6 +196,7 @@
                 android:text="@string/Champion8"
                 android:id="@+id/AsheDesc"
                 android:layout_gravity="center"
+                android:textColor="#fff7ffe2"
                 android:onClick="Ashe" />
         </TableRow>
 
@@ -211,6 +218,7 @@
                 android:text="@string/Champion9"
                 android:id="@+id/AzirDesc"
                 android:layout_gravity="center"
+                android:textColor="#fff7ffe2"
                 android:onClick="Azir" />
         </TableRow>
 
@@ -232,6 +240,7 @@
                 android:text="@string/Champion10"
                 android:id="@+id/BardDesc"
                 android:layout_gravity="center"
+                android:textColor="#fff7ffe2"
                 android:onClick="Bard" />
         </TableRow>
 
@@ -252,7 +261,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion11"
                 android:id="@+id/BlitzDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Blitzcrank" />
         </TableRow>
 
@@ -273,7 +282,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion12"
                 android:id="@+id/BrandDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Brand" />
         </TableRow>
 
@@ -294,7 +303,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion13"
                 android:id="@+id/BraumDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Braum" />
         </TableRow>
 
@@ -315,7 +324,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion14"
                 android:id="@+id/CaitDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Caitlyn" />
         </TableRow>
 
@@ -336,7 +345,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion15"
                 android:id="@+id/CassDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Cassiopeia" />
         </TableRow>
 
@@ -357,7 +366,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion16"
                 android:id="@+id/ChoDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Chogath" />
         </TableRow>
 
@@ -378,7 +387,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion17"
                 android:id="@+id/CorkiDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Corki" />
         </TableRow>
 
@@ -399,7 +408,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion18"
                 android:id="@+id/DariusDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Darius" />
         </TableRow>
 
@@ -420,7 +429,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion19"
                 android:id="@+id/DianaDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Diana" />
         </TableRow>
 
@@ -441,7 +450,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion20"
                 android:id="@+id/DravenDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Draven" />
         </TableRow>
 
@@ -462,7 +471,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion21"
                 android:id="@+id/DmundoDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Dmundo" />
         </TableRow>
 
@@ -483,7 +492,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion22"
                 android:id="@+id/EliseDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Elise" />
         </TableRow>
 
@@ -504,7 +513,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion23"
                 android:id="@+id/EveDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Elise" />
         </TableRow>
 
@@ -525,7 +534,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion24"
                 android:id="@+id/EzDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Ezreal" />
         </TableRow>
 
@@ -546,7 +555,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion25"
                 android:id="@+id/FiddleDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Fiddlesticks" />
         </TableRow>
 
@@ -567,7 +576,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion26"
                 android:id="@+id/FioraDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Fiora" />
         </TableRow>
 
@@ -588,7 +597,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion27"
                 android:id="@+id/FizzDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Fizz" />
         </TableRow>
 
@@ -609,7 +618,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion28"
                 android:id="@+id/GalioDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Galio" />
         </TableRow>
 
@@ -630,7 +639,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion29"
                 android:id="@+id/GPDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Gangplank" />
         </TableRow>
 
@@ -651,7 +660,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion30"
                 android:id="@+id/GarenDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Garen" />
         </TableRow>
 
@@ -672,7 +681,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion31"
                 android:id="@+id/GnarDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Gnar" />
         </TableRow>
 
@@ -693,7 +702,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion32"
                 android:id="@+id/GragasDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Gragas" />
         </TableRow>
 
@@ -714,7 +723,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion33"
                 android:id="@+id/GravesDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Graves" />
         </TableRow>
 
@@ -735,7 +744,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion34"
                 android:id="@+id/HecDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Hecarim" />
         </TableRow>
 
@@ -756,7 +765,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion35"
                 android:id="@+id/HeimerDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Heimerdinger"/>
         </TableRow>
 
@@ -777,7 +786,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion36"
                 android:id="@+id/IreDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Irelia"/>
         </TableRow>
 
@@ -798,7 +807,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion37"
                 android:id="@+id/JannaDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Janna"/>
         </TableRow>
 
@@ -819,7 +828,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion38"
                 android:id="@+id/J4Desc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="JarvanIV"/>
         </TableRow>
 
@@ -840,7 +849,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion39"
                 android:id="@+id/JaxDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Jax"/>
         </TableRow>
 
@@ -862,7 +871,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion40"
                 android:id="@+id/JayceDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Jayce"/>
         </TableRow>
 
@@ -883,7 +892,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion41"
                 android:id="@+id/JinxDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Jinx" />
         </TableRow>
 
@@ -904,7 +913,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion42"
                 android:id="@+id/KalistaDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Kalista" />
         </TableRow>
 
@@ -925,7 +934,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion43"
                 android:id="@+id/KarmaDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Karma" />
         </TableRow>
 
@@ -946,7 +955,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion44"
                 android:id="@+id/KarthDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Karthus"/>
         </TableRow>
 
@@ -967,7 +976,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion45"
                 android:id="@+id/KassDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Kassadin"/>
         </TableRow>
 
@@ -988,7 +997,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion46"
                 android:id="@+id/KattDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Katarina" />
         </TableRow>
 
@@ -1009,7 +1018,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion47"
                 android:id="@+id/KayleDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Kayle" />
         </TableRow>
 
@@ -1030,7 +1039,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion48"
                 android:id="@+id/KennenDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Kennen"/>
         </TableRow>
 
@@ -1051,7 +1060,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion49"
                 android:id="@+id/KhaDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Khazix"/>
         </TableRow>
 
@@ -1072,7 +1081,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion50"
                 android:id="@+id/KogDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Kogmaw"/>
         </TableRow>
 
@@ -1093,7 +1102,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion51"
                 android:id="@+id/LBDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="LeBlanc"/>
         </TableRow>
 
@@ -1114,7 +1123,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion52"
                 android:id="@+id/LeeDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="LeeSin"/>
         </TableRow>
 
@@ -1135,7 +1144,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion53"
                 android:id="@+id/LeonaDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Leona" />
         </TableRow>
 
@@ -1157,7 +1166,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion54"
                 android:id="@+id/LissDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Lissandra" />
         </TableRow>
 
@@ -1178,7 +1187,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion55"
                 android:id="@+id/LucianDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Lucian" />
         </TableRow>
 
@@ -1199,7 +1208,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion56"
                 android:id="@+id/LuluDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Lulu" />
         </TableRow>
 
@@ -1220,7 +1229,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion57"
                 android:id="@+id/LuxDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Lux"  />
         </TableRow>
 
@@ -1241,7 +1250,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion58"
                 android:id="@+id/MalphDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Malphite"  />
         </TableRow>
 
@@ -1262,7 +1271,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion59"
                 android:id="@+id/MalzDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Malzahar"  />
         </TableRow>
 
@@ -1283,7 +1292,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion60"
                 android:id="@+id/MaoDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Maokai"  />
         </TableRow>
 
@@ -1304,7 +1313,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion61"
                 android:id="@+id/MasterYiDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="MasterYi"  />
         </TableRow>
 
@@ -1325,7 +1334,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion62"
                 android:id="@+id/MFDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="MissFortune" />
         </TableRow>
 
@@ -1346,7 +1355,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion63"
                 android:id="@+id/textView61"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Mordekaiser" />
         </TableRow>
 
@@ -1367,7 +1376,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion64"
                 android:id="@+id/textView62"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Morgana" />
         </TableRow>
 
@@ -1388,7 +1397,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion65"
                 android:id="@+id/textView64"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Nami"  />
         </TableRow>
 
@@ -1409,7 +1418,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion66"
                 android:id="@+id/textView65"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Nasus"  />
         </TableRow>
 
@@ -1431,7 +1440,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion67"
                 android:id="@+id/textView4"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Nautilus" />
         </TableRow>
 
@@ -1453,7 +1462,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion68"
                 android:id="@+id/NidDesc"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Nidalee" />
         </TableRow>
 
@@ -1474,7 +1483,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion69"
                 android:id="@+id/textView66"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Nocturne"  />
         </TableRow>
 
@@ -1495,7 +1504,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion70"
                 android:id="@+id/textView67"
-                android:layout_gravity="center"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
                 android:onClick="Nunu" />
         </TableRow>
 
@@ -1507,7 +1516,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Olaf"
-                android:background="@drawable/olafthumb" />
+                android:background="@drawable/olafthumb"
+                android:onClick="Olaf"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1515,7 +1525,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion71"
                 android:id="@+id/textView68"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Olaf"/>
         </TableRow>
 
         <TableRow
@@ -1526,7 +1537,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Orianna"
-                android:background="@drawable/orithumb" />
+                android:background="@drawable/orithumb"
+                android:onClick="Orianna" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1534,7 +1546,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion72"
                 android:id="@+id/textView69"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Orianna"/>
         </TableRow>
 
         <TableRow
@@ -1545,7 +1558,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Pantheon"
-                android:background="@drawable/pantheonthumb" />
+                android:background="@drawable/pantheonthumb"
+                android:onClick="Pantheon"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1553,7 +1567,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion73"
                 android:id="@+id/textView70"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Pantheon"/>
         </TableRow>
 
         <TableRow
@@ -1564,7 +1579,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Poppy"
-                android:background="@drawable/poppythumb" />
+                android:background="@drawable/poppythumb"
+                android:onClick="Poppy" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1572,7 +1588,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion74"
                 android:id="@+id/textView71"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Poppy"/>
         </TableRow>
 
         <TableRow
@@ -1583,7 +1600,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Quinn"
-                android:background="@drawable/quinnthumb" />
+                android:background="@drawable/quinnthumb"
+                android:onClick="Quinn" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1591,7 +1609,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion75"
                 android:id="@+id/textView72"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Quinn"/>
         </TableRow>
 
         <TableRow
@@ -1602,7 +1621,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rammusthumb"
-                android:id="@+id/Rammus" />
+                android:id="@+id/Rammus"
+                android:onClick="Rammus"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1610,7 +1630,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion76"
                 android:id="@+id/textView73"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Rammus"/>
         </TableRow>
 
         <TableRow
@@ -1621,7 +1642,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/RekSai"
-                android:background="@drawable/rekthumb" />
+                android:background="@drawable/rekthumb"
+                android:onClick="RekSai"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1629,7 +1651,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion77"
                 android:id="@+id/textView74"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="RekSai"/>
         </TableRow>
 
         <TableRow
@@ -1640,7 +1663,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Renekton"
-                android:background="@drawable/renekthumb" />
+                android:background="@drawable/renekthumb"
+                android:onClick="Renekton"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1648,7 +1672,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion78"
                 android:id="@+id/textView75"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Renekton" />
         </TableRow>
 
         <TableRow
@@ -1659,7 +1684,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Rengo"
-                android:background="@drawable/rengarthumb" />
+                android:background="@drawable/rengarthumb"
+                android:onClick="Rengar" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1667,7 +1693,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion79"
                 android:id="@+id/textView76"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Rengar" />
         </TableRow>
 
         <TableRow
@@ -1678,7 +1705,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Riven"
-                android:background="@drawable/riventhumb" />
+                android:background="@drawable/riventhumb"
+                android:onClick="Riven" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1686,7 +1714,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion80"
                 android:id="@+id/textView77"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Riven"/>
         </TableRow>
 
         <TableRow
@@ -1698,7 +1727,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/Rumble"
                 android:src="@drawable/rumblethumble"
-                android:background="@drawable/rumblethumble" />
+                android:background="@drawable/rumblethumble"
+                android:onClick="Rumble"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1706,7 +1736,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion81"
                 android:id="@+id/RumbleDesc"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Rumble"/>
         </TableRow>
 
         <TableRow
@@ -1717,7 +1748,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Ryze"
-                android:background="@drawable/ryzethumb" />
+                android:background="@drawable/ryzethumb"
+                android:onClick="Ryze" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1725,7 +1757,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion82"
                 android:id="@+id/textView78"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Ryze" />
         </TableRow>
 
         <TableRow
@@ -1736,7 +1769,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Sejuani"
-                android:background="@drawable/sejthumb" />
+                android:background="@drawable/sejthumb"
+                android:onClick="Sejuani"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1744,7 +1778,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion83"
                 android:id="@+id/textView79"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Sejuani"/>
         </TableRow>
 
         <TableRow
@@ -1755,7 +1790,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Shaco"
-                android:background="@drawable/shacothumb" />
+                android:background="@drawable/shacothumb"
+                android:onClick="Shaco"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1763,7 +1799,9 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion84"
                 android:id="@+id/textView80"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Shaco" />
+
         </TableRow>
 
         <TableRow
@@ -1782,7 +1820,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion85"
                 android:id="@+id/textView81"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2" />
         </TableRow>
 
         <TableRow
@@ -1793,7 +1831,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Shyvana"
-                android:background="@drawable/shyvthumb" />
+                android:background="@drawable/shyvthumb"
+                android:onClick="Shyvana"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1801,7 +1840,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion86"
                 android:id="@+id/textView82"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Shyvana" />
         </TableRow>
 
         <TableRow
@@ -1812,7 +1852,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Singed"
-                android:background="@drawable/singedthumb" />
+                android:background="@drawable/singedthumb"
+                android:onClick="Singed"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1820,7 +1861,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion87"
                 android:id="@+id/textView83"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Singed"/>
         </TableRow>
 
         <TableRow
@@ -1831,7 +1873,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Sion"
-                android:background="@drawable/sionthumb" />
+                android:background="@drawable/sionthumb"
+                android:onClick="Sion" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1839,7 +1882,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion88"
                 android:id="@+id/textView84"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Sion"/>
         </TableRow>
 
         <TableRow
@@ -1850,7 +1894,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Sivir"
-                android:background="@drawable/sivirthumb" />
+                android:background="@drawable/sivirthumb"
+                android:onClick="Sivir"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1858,7 +1903,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion89"
                 android:id="@+id/textView85"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Sivir"/>
         </TableRow>
 
         <TableRow
@@ -1869,7 +1915,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Skarner"
-                android:background="@drawable/skarnerthumb" />
+                android:background="@drawable/skarnerthumb"
+                android:onClick="Skarner"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1877,7 +1924,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion90"
                 android:id="@+id/textView86"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Skarner"/>
         </TableRow>
 
         <TableRow
@@ -1888,7 +1936,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Sona"
-                android:background="@drawable/sonathumb" />
+                android:background="@drawable/sonathumb"
+                android:onClick="Sona"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1896,7 +1945,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion91"
                 android:id="@+id/textView87"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Sona"/>
         </TableRow>
 
         <TableRow
@@ -1907,7 +1957,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Soraka"
-                android:background="@drawable/sorakathumb" />
+                android:background="@drawable/sorakathumb"
+                android:onClick="Soraka"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1915,7 +1966,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion92"
                 android:id="@+id/textView88"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Soraka"/>
         </TableRow>
 
         <TableRow
@@ -1926,7 +1978,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Swain"
-                android:background="@drawable/swainthumb" />
+                android:background="@drawable/swainthumb"
+                android:onClick="Swain"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1934,7 +1987,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion93"
                 android:id="@+id/textView89"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Swain"/>
         </TableRow>
 
         <TableRow
@@ -1945,7 +1999,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Syndra"
-                android:background="@drawable/syndrathumb" />
+                android:background="@drawable/syndrathumb"
+                android:onClick="Syndra"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1953,7 +2008,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion94"
                 android:id="@+id/textView90"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Syndra"/>
         </TableRow>
 
         <TableRow
@@ -1964,7 +2020,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Talon"
-                android:background="@drawable/talonthumb" />
+                android:background="@drawable/talonthumb"
+                android:onClick="Talon"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1972,7 +2029,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion95"
                 android:id="@+id/textView91"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Talon"/>
         </TableRow>
 
         <TableRow
@@ -1983,7 +2041,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Taric"
-                android:background="@drawable/taricthumb" />
+                android:background="@drawable/taricthumb"
+                android:onClick="Taric"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -1991,7 +2050,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion96"
                 android:id="@+id/textView92"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Taric"/>
         </TableRow>
 
         <TableRow
@@ -2002,7 +2062,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Teemo"
-                android:background="@drawable/teemothumb" />
+                android:background="@drawable/teemothumb"
+                android:onClick="Teemo"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2010,7 +2071,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion97"
                 android:id="@+id/SatanDesc"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Teemo"/>
         </TableRow>
 
         <TableRow
@@ -2021,7 +2083,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Thresh"
-                android:background="@drawable/threshthumb" />
+                android:background="@drawable/threshthumb"
+                android:onClick="Thresh"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2029,7 +2092,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion98"
                 android:id="@+id/textView94"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Thresh"/>
         </TableRow>
 
         <TableRow
@@ -2040,7 +2104,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Tristana"
-                android:background="@drawable/tristthumb" />
+                android:background="@drawable/tristthumb"
+                android:onClick="Tristana"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2048,7 +2113,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion99"
                 android:id="@+id/textView95"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Tristana"/>
         </TableRow>
 
         <TableRow
@@ -2059,7 +2125,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Trundle"
-                android:background="@drawable/trundthumb" />
+                android:background="@drawable/trundthumb"
+                android:onClick="Trundle"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2067,7 +2134,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion100"
                 android:id="@+id/textView96"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Trundle"/>
         </TableRow>
 
         <TableRow
@@ -2078,7 +2146,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Tryndamere"
-                android:background="@drawable/tryndthumb" />
+                android:background="@drawable/tryndthumb"
+                android:onClick="Tryndamere"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2086,7 +2155,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion101"
                 android:id="@+id/textView97"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Tryndamere"/>
 
         </TableRow>
 
@@ -2098,7 +2168,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/TwistedFate"
-                android:background="@drawable/tfthumb" />
+                android:background="@drawable/tfthumb"
+                android:onClick="TwistedFate"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2106,7 +2177,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion102"
                 android:id="@+id/textView98"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="TwistedFate"/>
         </TableRow>
 
         <TableRow
@@ -2117,7 +2189,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Twitch"
-                android:background="@drawable/twitchtvthumb" />
+                android:background="@drawable/twitchtvthumb"
+                android:onClick="Twitch"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2125,7 +2198,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion103"
                 android:id="@+id/textView99"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Twitch"/>
         </TableRow>
 
         <TableRow
@@ -2136,7 +2210,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Udyr"
-                android:background="@drawable/udyrthumb" />
+                android:background="@drawable/udyrthumb"
+                android:onClick="Udyr"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2144,7 +2219,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion104"
                 android:id="@+id/textView100"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Udyr"/>
         </TableRow>
 
         <TableRow
@@ -2155,7 +2231,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Urgot"
-                android:background="@drawable/urgotthumb" />
+                android:background="@drawable/urgotthumb"
+                android:onClick="Urgot"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2163,7 +2240,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion105"
                 android:id="@+id/textView101"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Urgot"/>
         </TableRow>
 
         <TableRow
@@ -2174,7 +2252,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Varus"
-                android:background="@drawable/varusthumb" />
+                android:background="@drawable/varusthumb"
+                android:onClick="Varus"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2182,7 +2261,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion106"
                 android:id="@+id/textView102"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Varus"/>
         </TableRow>
 
         <TableRow
@@ -2193,7 +2273,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Vayne"
-                android:background="@drawable/vaynethumb" />
+                android:background="@drawable/vaynethumb"
+                android:onClick="Vayne"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2201,7 +2282,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion107"
                 android:id="@+id/textView103"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Vayne"/>
         </TableRow>
 
         <TableRow
@@ -2212,7 +2294,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Veigar"
-                android:background="@drawable/veigarthumb" />
+                android:background="@drawable/veigarthumb"
+                android:onClick="Veigar"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2220,7 +2303,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion108"
                 android:id="@+id/textView104"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Veigar"/>
         </TableRow>
 
         <TableRow
@@ -2232,7 +2316,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/VelKoz"
                 android:src="@drawable/velthumb"
-                android:background="@drawable/velthumb" />
+                android:background="@drawable/velthumb"
+                android:onClick="Velkoz"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2240,7 +2325,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion109"
                 android:id="@+id/VelkozDesc"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="VelKoz"/>
 
         </TableRow>
 
@@ -2252,7 +2338,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Vi"
-                android:background="@drawable/vithumb" />
+                android:background="@drawable/vithumb"
+                android:onClick="Vi"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2260,7 +2347,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion110"
                 android:id="@+id/textView105"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Vi"/>
         </TableRow>
 
         <TableRow
@@ -2271,7 +2359,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Viktor"
-                android:background="@drawable/viktorthumb" />
+                android:background="@drawable/viktorthumb"
+                android:onClick="Viktor"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2279,7 +2368,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion111"
                 android:id="@+id/textView106"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Viktor"/>
         </TableRow>
 
         <TableRow
@@ -2291,7 +2381,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/Vladimir"
                 android:src="@drawable/vladthumb"
-                android:background="@drawable/vladthumb" />
+                android:background="@drawable/vladthumb"
+                android:onClick="Vladimir"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2299,7 +2390,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion112"
                 android:id="@+id/textView6"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Vladimir"/>
 
         </TableRow>
 
@@ -2311,7 +2403,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Volibear"
-                android:background="@drawable/volithumb" />
+                android:background="@drawable/volithumb"
+                android:onClick="Volibear"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2319,26 +2412,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion113"
                 android:id="@+id/textView107"
-                android:layout_gravity="center" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" >
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/Wukong"
-                android:background="@drawable/wuthumb" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/Champion114"
-                android:id="@+id/textView108"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Volibear"/>
         </TableRow>
 
         <TableRow
@@ -2349,7 +2424,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Warwick"
-                android:background="@drawable/wwthumb" />
+                android:background="@drawable/wwthumb"
+                android:onClick="Warwick"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Champion114"
+                android:id="@+id/textView108"
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Warwick"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Wukong"
+                android:background="@drawable/wuthumb"
+                android:onClick="Wukong"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2357,7 +2454,9 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion115"
                 android:id="@+id/textView109"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:textColor="#fff7ffe2"
+                android:onClick="Wukong"/>
         </TableRow>
 
         <TableRow
@@ -2368,7 +2467,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Xerath"
-                android:background="@drawable/xeraththumb" />
+                android:background="@drawable/xeraththumb"
+                android:onClick="Xerath"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2376,7 +2476,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion116"
                 android:id="@+id/textView110"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Xerath"/>
         </TableRow>
 
         <TableRow
@@ -2387,7 +2488,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/XinZhao"
-                android:background="@drawable/xinthumb" />
+                android:background="@drawable/xinthumb"
+                android:onClick="XinZhao"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2395,7 +2497,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion117"
                 android:id="@+id/textView111"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="XinZhao"/>
         </TableRow>
 
         <TableRow
@@ -2406,7 +2509,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Yasuo"
-                android:background="@drawable/yasuothumb" />
+                android:background="@drawable/yasuothumb"
+                android:onClick="Yasuo"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2414,7 +2518,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion118"
                 android:id="@+id/textView112"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Yasuo"/>
         </TableRow>
 
         <TableRow
@@ -2425,7 +2530,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Yorick"
-                android:background="@drawable/yorickthumb" />
+                android:background="@drawable/yorickthumb"
+                android:onClick="Yorick"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2433,7 +2539,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion119"
                 android:id="@+id/textView113"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Yorick"/>
         </TableRow>
 
         <TableRow
@@ -2444,7 +2551,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Zac"
-                android:background="@drawable/zacthumb" />
+                android:background="@drawable/zacthumb"
+                android:onClick="Zac"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2452,7 +2560,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion120"
                 android:id="@+id/textView114"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Zac"/>
         </TableRow>
 
         <TableRow
@@ -2463,7 +2572,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Zed"
-                android:background="@drawable/zedthumb" />
+                android:background="@drawable/zedthumb"
+                android:onClick="Zed"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2471,7 +2581,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion121"
                 android:id="@+id/textView115"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Zed"/>
         </TableRow>
 
         <TableRow
@@ -2482,7 +2593,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Ziggs"
-                android:background="@drawable/ziggsthumb" />
+                android:background="@drawable/ziggsthumb"
+                android:onClick="Ziggs"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2490,7 +2602,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion122"
                 android:id="@+id/textView116"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Ziggs"/>
         </TableRow>
 
         <TableRow
@@ -2501,7 +2614,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Zilean"
-                android:background="@drawable/zileanthumb" />
+                android:background="@drawable/zileanthumb"
+                android:onClick="Zilean"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2509,7 +2623,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion123"
                 android:id="@+id/textView117"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Zilean"/>
         </TableRow>
 
         <TableRow
@@ -2520,7 +2635,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Zyra"
-                android:background="@drawable/zyrathumb" />
+                android:background="@drawable/zyrathumb"
+                android:onClick="Zyra"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -2528,7 +2644,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/Champion124"
                 android:id="@+id/textView118"
-                android:layout_gravity="center" />
+                android:layout_gravity="center" android:textColor="#fff7ffe2"
+                android:onClick="Zyra"/>
         </TableRow>
 
     <!--/TableLayout-->

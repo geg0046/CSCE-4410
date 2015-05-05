@@ -14,7 +14,7 @@ public class MissFortune extends ActionBarActivity {
         setContentView(R.layout.activity_miss_fortune);
         if(savedInstanceState == null){
             Bundle bundle = new Bundle();
-            bundle.putString("name", "Hecarim");
+            bundle.putString("name", "MissFortune");
             ChampionFragment fragInfo = new ChampionFragment();
             fragInfo.setArguments(bundle);
 
