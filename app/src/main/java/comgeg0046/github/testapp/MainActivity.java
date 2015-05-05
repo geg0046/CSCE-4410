@@ -349,7 +349,7 @@ public class MainActivity extends ActionBarActivity {
         Intent Nunu = new Intent(this, Nunu.class);
         startActivity(Nunu);
     }
-    /*
+
     public void Olaf(View view){
         Intent Olaf = new Intent(this, Olaf.class);
         startActivity(Olaf);
@@ -372,7 +372,7 @@ public class MainActivity extends ActionBarActivity {
     }
     public void Rammus(View view){
         Intent Rammus = new Intent(this, Rammus.class);
-        startActivity();
+        startActivity(Rammus);
     }
     public void RekSai(View view){
         Intent RekSai = new Intent(this, RekSai.class);
@@ -566,5 +566,5 @@ public class MainActivity extends ActionBarActivity {
         Intent Zyra = new Intent(this, Zyra.class);
         startActivity(Zyra);
     }
-    */
+
 }
