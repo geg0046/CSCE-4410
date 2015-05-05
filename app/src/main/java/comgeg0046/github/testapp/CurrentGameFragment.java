@@ -619,7 +619,7 @@ public class CurrentGameFragment extends Fragment {
         else if (championId == 238)
             return "Zed";
         else if (championId == 254)
-            return "Viktor";
+            return "Vi";
         else if (championId == 266)
             return "Aatrox";
         else if (championId == 267)

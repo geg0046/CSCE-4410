@@ -265,7 +265,7 @@ public class ChampionFragment extends Fragment {
 
 
 
-            resultStrs = name + "\nGeneral Rating (out of 10):\n\nAttack: " + attack + " Defense: " + defense + " Magic: " + magic + " Difficulty: " + difficulty + "\n\n\n " +
+            resultStrs = name + "\nGeneral Rating (out of 10):\n\nAttack: " + attack + " Defense: " + defense + " Magic: " + magic + " Difficulty: " + difficulty + "\n\n\n" +
 
                     "STATS:" +
                     "\n\nHealth: " + hp + " (+" + hppl + " per level)\n" +
